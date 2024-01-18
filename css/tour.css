@@ -1,4 +1,4 @@
-body{
+.content1{
     padding:0;
     margin: 0;
     width:100%;
@@ -124,4 +124,29 @@ body{
 }
 #slider-span7:target ~ .image-slider {
     left: -70%;
+}
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.content3{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+}
+.container{
+    display: flex;
+    
+}
+.card{
+    height:500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+}
+.card-img{
+    height: 500px;
+    
 }
