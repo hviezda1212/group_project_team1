@@ -11,11 +11,11 @@
           
           /* border-radius */
           --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
-          --radius-50: 50px /* 완전히 둥글게 */	
+          --radius-50: 50px; /* 완전히 둥글게 */	
 
        /* margin */	
-          --margin-16: 16px /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
-          --margin-107: 107px /* 섹션과 섹션사이에 넣어주세요 */
+          --margin-16: 16px; /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+          --margin-107: 107px; /* 섹션과 섹션사이에 넣어주세요 */
 
       /* box-shadow */
           --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
@@ -70,7 +70,7 @@ h4{
 
 .container {
     display: flex;
-    /* border: 1px solid blue; */
+    border: 1px solid red;
 }
 
 .main-container {
@@ -78,8 +78,7 @@ h4{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid #4b778d25; 구역 표시용 */
-    padding-top: 40px;
+    border: 1px solid #4b778d25;
     margin-bottom: 200px;
 }
 
@@ -89,106 +88,8 @@ h4{
     /* background-color: rgba(255, 166, 0, 0.164); */
 }
 
-/* header */
-header{
-    width: 100%;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    
-}
-
-.logo-container{
-    font-family: jalnan;
-}
-
-.logo {
-    display: flex;
-    color: #4B778D;
-    font-weight: 400;
-    font-size: 40px;
-    margin-right: 50px;
-}
-
-.logo i{
-    color: #28B5B5;
-    margin-right: 13px;
-}
-
-.search-container{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-}
-
-.search-input{
-    width: 100%;
-    padding: 14px 20px;
-    background-color: #f5f5f5;
-    border: none;
-    border-radius: 50px;
-}
-
-.search-container i {
-    position: absolute;
-    right: 19px;
-}
-
-.search-input:hover, .search-input:focus, .search-input:focus-visible{
-    border: 1px solid #28B5B5;
-    outline: #28B5B5;
-}
-
-/* nav-bar */
-.nav-bar{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    /* margin-bottom: 50px; */
-    /* border-bottom: 1px solid #28B5B5; */
-}
-
-.nav-bar ul:nth-child(1){
-    padding-left: 10px;
-}
-
-.nav-items{
-    display: flex;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.nav-item{
-    padding: 0 50px 13px 0;
-}
-
-.sign-item{
-    padding: 10px 18px;
-}
-
-.join{
-    background-color: #28B5B5;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.join:hover{
-    background-color: #28b5b5a9;
-    cursor: pointer;
-}
-
-.signs{
-    display: flex;
-    font-size: 15px;
-    font-weight: 600;
-}
-
-/* 메인 배너 */
-.main-banner-area{
+/* 검색 영역 */
+.main-search-area{
     width: 100%;
     height: 600px;
     background-size: cover;
@@ -198,6 +99,20 @@ header{
     margin-bottom: 107px;
 }
 
+.button-area{
+    display: flex;
+    padding : 20px;
+}
+
+.input-area{
+    display: flex;
+    padding : 20px;
+}
+
+.latest-area{
+    display: flex;
+    padding : 20px;
+}
 
 /* main */
 main{
@@ -205,11 +120,29 @@ main{
     top: 807px; */
 }
 
-/* 어디로 떠날까요 */
 .title-area {
     width: 100%;
     display: flex;
     justify-content: flex-start;
+}
+
+.exit-area {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.line{
+    display: flex;
+    justify-content: flex-end;
+    border-bottom : 1px solid #273e49;
+    margin-left : 20px;
+    margin-right : 20px;
+}
+
+.promo-area {
+    display: flex;
+    margin-bottom: 107px;
 }
 
 .item-box {
@@ -235,6 +168,26 @@ main{
 
 .item:hover{
     box-shadow: 0 2px 8px #38556450
+}
+
+.item2 {
+    position: relative;
+    width: 251.5px;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    margin-right: 24px;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-size: cover;
+}
+
+.item2:hover{
+    background-color: #28b5b5dc;
 }
 
 .item-cap{
@@ -298,14 +251,6 @@ main{
 .item-cap-texts .tag{
     color: #4B778D;
     background-color: #8FD9A8;
-}
-
-.color-cover{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #28b5b5dc;
-    /*box-shadow: 10px 10px 200px 10px #292e30bd inset;*/
 }
 
 .event-banner {

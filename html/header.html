@@ -16,169 +16,168 @@
       crossorigin="anonymous"
     ></script>
     <style>
-          :root {
-            /* color */
-            --white: #fff;
-            --black: #000;
-            --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
-            --blue-800: #4B778D; /* 메인컬러1 : 네이비 */
-            --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
-            --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
-            --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
-            --yellow-green: #D2E69C; /* 메인컬러4 가장 밝은 연두색 */
+      :root {
+        /* color */
+        --white: #fff;
+        --black: #000;
+        --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
+        --blue-800: #4b778d; /* 메인컬러1 : 네이비 */
+        --blue-700: #626f75; /* 서브 텍스트 색상, 짙은 회색 */
+        --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
+        --light-green: #8fd9a8; /* 메인컬러3 밝은 연두색 */
+        --yellow-green: #d2e69c; /* 메인컬러4 가장 밝은 연두색 */
 
-            /* border-radius */
-            --radius-10: 10px; /* 카드 요소에 넣어주세요. */
-            --radius-50: 50px /* 완전히 둥글게 */
+        /* border-radius */
+        --radius-10: 10px; /* 카드 요소에 넣어주세요. */
+        --radius-50: 50px; /* 완전히 둥글게 */
 
-            /* margin */
-            --margin-16: 16px /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
-            --margin-107: 107px /* 섹션과 섹션사이에 넣어주세요 */
+        /* margin */
+        --margin-16: 16px; /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+        --margin-107: 107px; /* 섹션과 섹션사이에 넣어주세요 */
 
         /* box-shadow */
-            --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
-        }
+        --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
+      }
 
-        /* 로고 서체 */
-        @font-face {
-          font-family: "jalnan"; /* 서체의 이름을 지정합니다. */
-          src: url("../asset/font/Jalnan2TTF.ttf"); /* 서체 파일의 경로를 지정합니다. */
-        }
-        /* 나머지 서체 */
-        @font-face {
-          font-family: "suit";
-          src: url("../asset/font/SUIT-Variable.ttf");
-        }
+      /* 로고 서체 */
+      @font-face {
+        font-family: "jalnan"; /* 서체의 이름을 지정합니다. */
+        src: url("../asset/font/Jalnan2TTF.ttf"); /* 서체 파일의 경로를 지정합니다. */
+      }
+      /* 나머지 서체 */
+      @font-face {
+        font-family: "suit";
+        src: url("../asset/font/SUIT-Variable.ttf");
+      }
 
-        body {
-          font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
-        }
+      body {
+        font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
+      }
 
-        h1,
-        h2,
-        h3 {
-          margin: 0;
-        }
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+      }
 
-        a{
-            color: var(--blue-900);
-            text-decoration: none;
-        }
+      a {
+        color: var(--blue-900);
+        text-decoration: none;
+      }
 
-        header {
-            width: 100%;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-        }
+      header {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
 
-        .header-area {
-          width: 1086px;
-          height: 48px;
-          display: flex;
-          justify-content: flex-start;
-          margin-top: 100px;
-          margin-bottom: 25px;
-        }
+      .header-area {
+        width: 1086px; /* ❗️모바일 버전 변경시 문제발생, 모바일버전에선 없앨것 */
+        height: 48px;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 100px;
+        margin-bottom: 25px;
+      }
 
-        .header-logo {
-          display: flex;
-          align-items: center;
-          margin-right: 50px;
-          font-family: jalnan;
-          font-size: 40px;
-          font-weight: 400;
-          color: var(--blue-800);
-        }
+      .header-logo {
+        display: flex;
+        align-items: center;
+        margin-right: 50px;
+        font-family: jalnan;
+        font-size: 40px;
+        font-weight: 400;
+        color: var(--blue-800);
+      }
 
-        .header-logo:hover{
-            color: var(--blue-800);
-        }
+      .header-logo:hover {
+        color: var(--blue-800);
+      }
 
-        .logo-icon {
-          margin-right: 13px;
-          color: var(--mint-900);
-        }
+      .logo-icon {
+        margin-right: 13px;
+        color: var(--mint-900);
+      }
 
-        .header-search{
-          position: relative;
-            width: 35%;
-            display: flex;
-            align-items: center;
-        }
+      .header-search {
+        position: relative;
+        width: 35%;
+        display: flex;
+        align-items: center;
+      }
 
-        .header-search-input{
-          width: 100%;
-          padding: 14px 43px 14px 20px;
-          background-color: #f5f5f5;
-          border: 2px solid rgba(0, 0, 0, 0);
-          border-radius: 50px;
-          box-sizing: border-box;
-        }
+      .header-search-input {
+        width: 100%;
+        padding: 14px 43px 14px 20px;
+        background-color: #f5f5f5;
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 50px;
+        box-sizing: border-box;
+      }
 
-        .header-search-input:focus-visible{
-            border: 2px solid var(--mint-900);
-            outline: none;
-        }
+      .header-search-input:focus-visible {
+        border: 2px solid var(--mint-900);
+        outline: none;
+      }
 
-        .header-search-icon{
-            position: absolute;
-            right: 20px;
-            cursor: pointer;
-        }
+      .header-search-icon {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+      }
 
       input::-webkit-search-decoration,
       input::-webkit-search-cancel-button,
       input::-webkit-search-results-button,
-      input::-webkit-search-results-decoration{
-          display:none;
+      input::-webkit-search-results-decoration {
+        display: none;
       }
 
       /* nav */
-      .nav-bar{
-          width: 1086px;
-          background-color: rgba(128, 128, 128, 0) !important;
+      .nav-bar {
+        width: 1086px; /* ❗️모바일 버전 변경시 문제발생, 모바일버전에선 없앨것 */
       }
 
-      .nav-container{
-          padding: 0;
+      .nav-container {
+        padding: 0 !important;
       }
 
-      .nav-menu-link{
-          margin-right: 40px;
-          font-size: 17px;
-          font-weight: 700;
-        }
+      .nav-menu-link {
+        margin-right: 40px;
+        font-size: 17px;
+        font-weight: 700;
+      }
 
-        .nav-menu-link:hover{
-          color: var(--blue-900)!important;
-        }
+      .nav-menu-link:hover {
+        color: var(--blue-900) !important;
+      }
 
-        .sign-btn{
-            padding: 10px 18px;
-            font-size: 15px;
-            font-weight: 600;
-            border: none;
-            border-radius: var(--radius-10);
-            cursor: pointer;
-        }
-        .login-btn{
-            background-color: rgba(128, 128, 128, 0);
-        }
+      .sign-btn {
+        padding: 10px 18px;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        border-radius: var(--radius-10);
+        cursor: pointer;
+      }
+      .login-btn {
+        background-color: rgba(128, 128, 128, 0);
+      }
 
-        .login-btn:hover{
-            color: var(--blue-900);
-            background-color: #efefef;
-        }
+      .login-btn:hover {
+        color: var(--blue-900);
+        background-color: #efefef;
+      }
 
-        .join-btn{
-            background-color: #28b5b58f;
-        }
+      .join-btn {
+        background-color: #28b5b58f;
+      }
 
-        .join-btn:hover{
-            color: var(--blue-900);
-           background-color: var(--mint-900);
-        }
+      .join-btn:hover {
+        color: var(--blue-900);
+        background-color: var(--mint-900);
+      }
     </style>
   </head>
   <body>
@@ -201,7 +200,7 @@
       </div>
 
       <!-- 네비게이션 바 -->
-      <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="nav-bar navbar navbar-expand-lg navbar-light">
         <div class="nav-container container-fluid">
           <button
             class="navbar-toggler"
