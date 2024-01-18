@@ -215,7 +215,7 @@ main{
 .item-box {
     display: flex;
     margin-bottom: 107px;
-    }
+}
 
 .item {
     position: relative;
@@ -230,7 +230,6 @@ main{
     overflow: hidden;
     flex-flow: column;
     justify-content: flex-end;
-    background-image: url(https://d2ur7st6jjikze.cloudfront.net/landscapes/4737_large_square_1535949304.jpg?1535949304);
     background-size: cover;
 }
 
