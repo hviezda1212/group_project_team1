@@ -60,6 +60,11 @@
           margin: 0;
         }
 
+        a{
+            color: var(--blue-900);
+            text-decoration: none;
+        }
+
         header {
             width: 100%;
             display: flex;
@@ -84,6 +89,10 @@
           font-size: 40px;
           font-weight: 400;
           color: var(--blue-800);
+        }
+
+        .header-logo:hover{
+            color: var(--blue-800);
         }
 
         .logo-icon {
@@ -115,7 +124,7 @@
         .header-search-icon{
             position: absolute;
             right: 20px;
-
+            cursor: pointer;
         }
 
       input::-webkit-search-decoration,
@@ -128,17 +137,58 @@
       /* nav */
       .nav-bar{
           width: 1086px;
+          background-color: rgba(128, 128, 128, 0) !important;
       }
+
+      .nav-container{
+          padding: 0;
+      }
+
+      .nav-menu-link{
+          margin-right: 40px;
+          font-size: 17px;
+          font-weight: 700;
+        }
+
+        .nav-menu-link:hover{
+          color: var(--blue-900)!important;
+        }
+
+        .sign-btn{
+            padding: 10px 18px;
+            font-size: 15px;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius-10);
+            cursor: pointer;
+        }
+        .login-btn{
+            background-color: rgba(128, 128, 128, 0);
+        }
+
+        .login-btn:hover{
+            color: var(--blue-900);
+            background-color: #efefef;
+        }
+
+        .join-btn{
+            background-color: #28b5b58f;
+        }
+
+        .join-btn:hover{
+            color: var(--blue-900);
+           background-color: var(--mint-900);
+        }
     </style>
   </head>
   <body>
     <header>
       <!-- 헤더 -->
       <div class="header-area">
-        <div class="header-logo">
+        <a href="./main.html" class="header-logo">
           <i class="logo-icon fa-solid fa-mountain-sun"></i>
           <h1 class="logo-text">누나투어</h1>
-        </div>
+        </a>
 
         <div class="header-search">
           <input
@@ -152,7 +202,7 @@
 
       <!-- 네비게이션 바 -->
       <nav class="nav-bar navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="nav-container container-fluid">
           <button
             class="navbar-toggler"
             type="button"
@@ -168,31 +218,25 @@
             <!-- nav 메뉴 -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-menu-link nav-link" aria-current="page" href="#"
+                  >숙소</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-menu-link nav-link" href="#">지역맛집</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Dropdown </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+                <a class="nav-menu-link nav-link" href="#">투어·티켓</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-menu-link nav-link" href="#">항공편</a>
               </li>
             </ul>
 
             <!-- 로그인, 회원가입 버튼 -->
             <div class="sign-btn-container">
-              <button class="login-btn">로그인</button>
-              <button class="join-btn">회원가입</button>
+              <a class="sign-btn login-btn">로그인</a>
+              <a class="sign-btn join-btn">회원가입</a>
             </div>
           </div>
         </div>
