@@ -1,0 +1,183 @@
+:root {
+    /* color */
+    --white: #fff;
+          --black: #000;
+    --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
+          --blue-800: ##4B778D; /* 메인컬러1 : 네이비 */
+          --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
+          --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
+          --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
+          --yellow-green: #D2E69C; /* 메인컬러4 가장 밝은 연두색 */
+          
+          /* border-radius */
+          --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
+          --radius-50: 50px /* 완전히 둥글게 */	
+
+       /* margin */	
+          --margin-16: 16px /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+          --margin-107: 107px /* 섹션과 섹션사이에 넣어주세요 */
+
+      /* box-shadow */
+          --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
+}
+
+.title { /* 섹션 제목 */
+    color: var(--blue-900);
+    font-size: 28px;
+font-weight: 800;
+}
+
+/*이미지 슬라이드 버릴것*/
+.content1{
+    padding:0;
+    margin: 0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+}
+.slide-container{
+    width: 100%;
+    height:85vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.image-slider{
+    width: 100%;
+    height:600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .7s;
+}
+.slides-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+.img{
+    position: relative;
+    width: 240px;
+    height:370px;
+    transition: .5s;
+    filter: saturate(10%);
+}
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: .5s;
+    background-color: rgba(0,0,0,.4);
+
+}
+.button:hover{
+    background-color: rgba(0,0,0,.2);
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+/* image position */
+#slider-span1:target ~ .image-slider {
+    left: 70%;
+}
+#slider-span2:target ~ .image-slider {
+    left: 50%;
+}
+#slider-span3:target ~ .image-slider {
+    left: 25%;
+}
+#slider-span5:target ~ .image-slider {
+    left: -25%;
+}
+#slider-span6:target ~ .image-slider {
+    left: -50%;
+}
+#slider-span7:target ~ .image-slider {
+    left: -70%;
+}
+/*--------------------*/
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.content3{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+}
+.container{
+    display: flex;
+    
+}
+.card{
+    height:500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+}
+.card-img{
+    height: 500px;
+    
+}
