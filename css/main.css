@@ -178,3 +178,56 @@ section{
     margin-left: 10px;
 }
 
+
+/* food section */
+
+
+/* tour section */
+.tour-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-items a{
+    color: var(--white);
+}
+.tour-items a:hover{
+    color: var(--white);
+}
+
+.item-group{
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.tour-item{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    border-radius: var(--radius-10);
+    background-color: gray;
+}
+
+.tour-items>.tour-item:first-child{
+    width: 361px;
+    height: 464px;
+    margin-right: 16px;
+}
+
+.item-group .tour-item:first-child{
+    margin-bottom: 16px;
+}
+
+.item-group-first{
+    margin-right: 16px;
+}
+
+
+
+
+
+
+/* flight section */
