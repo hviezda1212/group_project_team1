@@ -3,7 +3,7 @@
     --white: #fff;
     --black: #000;
     --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
-    --blue-800: ##4B778D; /* 메인컬러1 : 네이비 */
+    --blue-800: #4B778D; /* 메인컬러1 : 네이비 */
     --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
     --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
     --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
@@ -189,6 +189,10 @@ section{
     justify-content: space-between;
 }
 
+.tour-items p{
+    margin: 0;
+}
+
 .tour-items a{
     color: var(--white);
 }
@@ -204,18 +208,34 @@ section{
 }
 
 .tour-item{
+    position: relative;
     display: flex;
+    align-items: flex-end;
     width: 100%;
     height: 50%;
+    padding: 20px 26px;
     border-radius: var(--radius-10);
     background-color: gray;
+    box-shadow: 0px -70px 50px 0 #00000093 inset;
+    overflow: hidden;
 }
 
 .tour-items>.tour-item:first-child{
     width: 361px;
     height: 464px;
     margin-right: 16px;
+    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
 }
+
+.item-group .tour-item{
+    background-image: url(/asset/image/main/tour2.jpeg);
+    background-size: cover;
+}
+
+/* .item-group-first .tour-item:nth-child(1){
+    background-image: url(/asset/image/main/tour2.jpeg);
+    background-size: cover;
+} */
 
 .item-group .tour-item:first-child{
     margin-bottom: 16px;
@@ -225,6 +245,65 @@ section{
     margin-right: 16px;
 }
 
+.item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 34px 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: #28b5b5c7;;
+}
+
+.tour-item:hover .item-hover{
+    display: flex;
+}
+
+.item-hover{
+    display: none;
+}
+
+.tour-item:hover .tour-title{
+    opacity: 0;
+}
+
+.item-hover h3{
+    font-size: 20px;
+}
+
+.item-hover p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.item-hover .bottom-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item-hover .tags{
+    display: flex;
+}
+
+.tags .tag{
+    margin-right: 5px;
+    padding: 4px 8px;
+    border-radius: var(--radius-50);
+    font-size: 13px;
+    color: var(--blue-800);
+    background-color: var(--light-green);
+}
+
+.item-hover .price{
+    font-size: 25px;
+    font-weight: 500;
+}
 
 
 
