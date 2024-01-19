@@ -42,7 +42,7 @@ h3,
 h4,
 h5,
 ul,
-li {
+li{
   padding-left: 0 !important;
   margin-bottom: 0;
   list-style: none;
@@ -52,7 +52,6 @@ a {
     color: var(--blue-900);
     text-decoration: none !important;
   }
-
 
 .title { /* 섹션 제목 */
     margin-top: var(--margin-107);
@@ -90,14 +89,91 @@ main{
     align-items: center;
 }
 
+section{
+    width: 100%;
+}
 
-/* region-section */
+.section-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+
+/* region section */
 .region-card-container{
     margin-bottom: var(--margin-107);
 }
 
-.card-item{
+.card-item{ 
     margin: 10px;
 }
 
+
+/* hot-deal section */
+.hot-deal-box{
+    width: 100%;
+    display: flex;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.hot-deal-cap{
+    width: 100%;
+    padding: 40px;
+    background-color: var(--mint-900);
+    box-shadow: -4px 0 20px rgba(34, 34, 34, 0.589);
+}
+
+.time-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--white);
+    border-radius: var(--radius-50);
+}
+
+.time-area p{
+    margin-left: 7px;
+    margin-bottom: 0;
+}
+
+.cap-area{
+    height: 83%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 25px 0  0 25px;
+    color: var(--white);
+}
+
+.hot-deal-cap .sub-cap{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--blue-900);
+}
+
+.hot-deal-cap .price-cap{
+    display: flex;
+    justify-content: flex-end;
+    margin: 160px 0 0 0;
+    font-size: 43px;
+}
+
+.cap-area .check-btn{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.check-btn img{
+    margin-left: 10px;
+}
 
