@@ -55,6 +55,7 @@ a {
 
 
 .title { /* 섹션 제목 */
+    margin-top: var(--margin-107);
     color: var(--blue-900);
     font-size: 28px;
     font-weight: 800;
@@ -65,17 +66,36 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    overflow: auto;
 }
 
 
 /* main-banner */
 .main-banner-box{
     height: 700px;
-    margin-bottom: var(--margin-107);
+}
+
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    max-width: 1086px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 /* region-section */
+.region-card-container{
+    margin-bottom: var(--margin-107);
+}
+
 .card-item{
     margin: 10px;
 }
