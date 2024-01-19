@@ -60,7 +60,24 @@ a {
     font-weight: 800;
 }
 
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+
+/* main-banner */
 .main-banner-box{
     height: 700px;
+    margin-bottom: var(--margin-107);
 }
+
+
+/* region-section */
+.card-item{
+    margin: 10px;
+}
+
+
