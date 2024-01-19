@@ -29,7 +29,7 @@
 /* 나머지 서체 */
 @font-face {
     font-family: 'suit';
-    src: url("../asset/font/Jalnan2TTF.ttf");
+    src: url("../asset/font/SUIT-Variable.ttf");
 }
 
 body{
