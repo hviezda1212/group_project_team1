@@ -308,6 +308,59 @@ section{
 
 
 /* food section */
+.food-section .card-item{
+    width: 270px;
+    height: 360px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    margin-right: 17px;
+    margin-bottom: 10px;
+    border: 0.5px solid rgb(199, 197, 197);
+    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-size: cover;
+    box-shadow: var(--shadow);
+}
+
+.food-section .card-cap{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--white);
+}
+
+.food-section h3{
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.food-section p{
+    font-size: 14px;
+    color: var(--blue-700);
+}
+
+.food-section .card-cap .bottom-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-icon{
+    width: 15px;
+}
+
+.food-section .tags{
+    display: flex;
+}
+
+.food-section .tags .tag{
+    font-size: 10px;
+    color: var(--white);
+    background-color: #98251E;
+}
 
 
 /* tour section */
