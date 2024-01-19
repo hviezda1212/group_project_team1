@@ -71,7 +71,8 @@ a {
 
 .card-item{ 
     margin-right: 10px;
-    border: 1px solid red;
+    border-radius: var(--radius-10);
+    overflow: hidden;
 }
 
 .card-item h3,p {
@@ -116,9 +117,8 @@ section{
     margin-bottom: var(--margin-107);
 }
 
-.card-item{ 
+.region-card-container .card-item{ 
     margin-right: 10px;
-    border: 1px solid red;
 }
 
 
