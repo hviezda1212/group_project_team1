@@ -217,7 +217,7 @@ body {
     border-radius: 50px;
     color: var(--white);
     font-weight: 700;
-    margin: 10px 5px;
+    margin: 10px 5px 10px 0;
 }
 
 @keyframes anime_textup {
@@ -274,4 +274,24 @@ body {
 .banner-container img {
     height: 250px;
     
+}
+
+.local-food {
+    margin-top: var(--margin-107);
+}
+
+.local-food.group {
+    overflow: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.card {
+    display: inline;
+}
+
+.local-food a {
+    text-decoration: none;
+    color: var(--blue-900)
 }
