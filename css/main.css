@@ -349,7 +349,7 @@ section{
 }
 
 .star-icon{
-    width: 15px;
+    width: 20px;
 }
 
 .food-section .tags{
@@ -357,7 +357,7 @@ section{
 }
 
 .food-section .tags .tag{
-    font-size: 10px;
+    font-size: 12px;
     color: var(--white);
     background-color: #98251E;
 }
@@ -470,6 +470,10 @@ section{
 
 .item-hover .tags{
     display: flex;
+}
+
+.item-hover-first{
+    justify-content: space-around;
 }
 
 .tags .tag{
