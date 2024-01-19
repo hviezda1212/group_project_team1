@@ -55,6 +55,7 @@ a {
 
 .title { /* 섹션 제목 */
     margin-top: var(--margin-107);
+    margin-bottom: 16px;
     color: var(--blue-900);
     font-size: 28px;
     font-weight: 800;
@@ -132,7 +133,7 @@ section{
     align-items: center;
     padding: 20px;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 700;
     background-color: var(--white);
     border-radius: var(--radius-50);
 }
