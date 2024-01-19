@@ -126,6 +126,10 @@ body {
     border-color: #28b5b5;
 }
 
+.local-card-group .card {
+    width: 200px; 
+}
+
 .location-btn{
     height: 100px;
     width: 100px;
@@ -280,10 +284,11 @@ body {
     margin-top: var(--margin-107);
 }
 
-.local-food-title {
+.food-title {
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
+    margin-bottom: 10px;
 }
 
 .all {
@@ -310,4 +315,20 @@ body {
 .local-food a {
     text-decoration: none;
     color: var(--blue-900)
+}
+
+.city {
+    margin-top: var(--margin-107);
+}
+
+.over {
+    position: relative;
+}
+
+.over-text {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
