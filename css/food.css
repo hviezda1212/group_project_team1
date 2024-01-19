@@ -280,15 +280,16 @@ body {
     margin-top: var(--margin-107);
 }
 
-.local-food.group {
-    overflow: scroll;
+.local-card-group {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .card {
-    display: inline;
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 10px;
 }
 
 .local-food a {
