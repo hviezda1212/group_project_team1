@@ -31,131 +31,275 @@
     src: url("../asset/font/Jalnan2TTF.ttf");
 }
 body{
+    
     font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
 }
 .title { /* 섹션 제목 */
+    margin-top: var(--margin-107);
+    margin-bottom: 16px;
     color: var(--blue-900);
     font-size: 28px;
-font-weight: 800;
+    font-weight: 800;
 }
-/*검색*/
-.search-box{
-    text-align: center;
-    margin: 0 auto;
-}
-.search{
-    border: 1px solid black;
-    position: absolute;
-    width: 500px;
-    height: 50px;
-    border-radius: 30px;
-    padding: 0 20px;
-    margin: 20px;
-}
-.content1{
+.position{
     position: relative;
-    height:1000px;
+    top: -51%;
+    left: 4%;
 }
-.bg-color{
-    position: absolute;
-    top: 300px;
-    width: 100%;
-    height:1000px;
-    background-color: #28b5b5;
-}
-
-/*이벤트 베너*/
-.content2{
-    
-}
-.swiper-slide{
-    width: 100%;
-    height: 800px;
-    background-color: #eee;
-}
-.swiper-pagination-bullet{
-    width: 40px;
-    height: 3px;
-    border-radius: 0;
-    background-color: #fff;
-}
-.swiper-pagination-bullet-active{
-    background-color: #fff;
-    width: 80px;
-}
-.swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled{
-    opacity: 0;
-}
-/*content3-card-*/
-*{
-    margin:0px;
-    padding: 0px;
-    font-family:sans-serif;
-}
-.content3{
+.content1 {
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
-    background: whitesmoke;
-}
-.card-container{
+    height: 1000px;
+    
+  }
+  .citys{
+    margin-top: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.city{
+    background:url(../asset/image/tour/seoul-forest.bmp);
+    width: 250px;
+    height: 200px;
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    margin: 0 24px 0 0 ;
 }
-.card{
-    height: 500px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
+.city p{
+    bottom: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #273e49;
+    position: absolute;
+    margin: 15px;
+}
+.bg-color {
+    position: absolute;
+    top: 315px;
+    width: 100%;
+    height: 1060px;
+    background-color: #28b5b5;
+    z-index: 0;
+    
+  }
+/*검색*/
+.search-box {
+    position: relative;
+    text-align: center; 
+  }
+  
+  .search {
+    top: -415px;
+    width: 500px;
+    padding: 14px 43px 14px 20px;
+    background-color: #f5f5f5;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: none;
+    margin: 30px auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+  } 
+ .search-icon{
+    top: -366px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    z-index: 555;
+ }
+/*이벤트 베너*/
+.content2{
+    background-color: #eaeaea;
     overflow: hidden;
 }
-.card-img{
-    height: 500px;
-    width: 350px;
-    border-radius: 3px;
-    transition:.5s ;
-}
-.intro{
-    height: 70px;
-    width: 350px;
-    padding:6px;
-    box-sizing: border-box;
+.container{
     position: absolute;
-    bottom:190px;
-    background: rgb(27,27,27,.5);
-    color: white;
-    transition:.5s ;
+    left: 50%;
+    top: 108%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 600px;
+    padding: 50px;
+    background-color: #f5f5f5;
 }
-h1{
-    margin: 10px;
-    font-size: 40px;
+#slide{
+    width: max-content;
+    margin-top: 50px;
 }
-p{
-    font-size: 20px;
-    margin: 20px;
-    visibility: hidden;
+.item{
+    width: 200px;
+    height: 300px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 30px;
+    box-shadow: 0 30px 50px #505050;
+}
+.item:nth-child(1),
+.item:nth-child(2){
+    left: 0;
+    top: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+}
+.item:nth-child(3){
+    left: 50%;
+}
+.item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.item:nth-child(5){
+    left: calc(50% + 440px);
+}
+.item:nth-child(n+6){
+    left: calc(50% + 660px);
     opacity: 0;
 }
-span{
-    font-weight: bold;
-}
-.card:hover{
-    cursor: pointer;
-}
-.card:hover .intro{
-    height: 220px;
-    bottom:190px;
-    background: black;
-    overflow: hidden;
-}
-.card:hover p{
-    opacity: 1;
-    visibility: visible;
-}
-.card:hover .card-img{
-    transform: scale(1.1)rotate(-3deg);
-}
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    padding: 0;
+    color: #eee;
+    transform: translate(0, -50%);
+    display: none;
 
+}
+.item:nth-child(2) .content{
+    display: block;
+    z-index: 11111;
+}
+.item .name{
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 1 forwards; 
+}
+.item .des{
+    margin: 20px 0;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.3s forwards; 
+}
+.item button{
+    padding: 10px 20px;
+    border: none;
+    opacity: 0;
+    animation: showcontent 1s ease-in-out 0.6s forwards; 
+}
+@keyframes showcontent{
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    } to{
+        opacity: 1;
+        transform: translate(0, 0);
+        filter: blur(0);
+    }
+}
+.buttons{
+    position: absolute;
+    bottom: 30px;
+    z-index: 222222;
+    text-align: center;
+    width: 100%;
+}
+.buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #555;
+    transition: 0.5s;
+
+}.buttons button:hover{
+    background-color:  #D2E69C;
+}
+.content3{
+    margin-top: 250px;
+}
+.content3,.content4,.content5{ 
+    height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 252.2px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 8px solid white;
+    position: relative;
+    margin: 0 24px 0 0 ;
+}
+.card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right:-100%;
+    position: absolute;
+    background: #273e49;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+}
+.card:hover .card-body{
+    right: 0;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+.card-sub-title{
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 300;
+}
+.card-into{
+    font-size:16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+.card-btn{
+    color: #273e49;
+    background: #8fabba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    width: 120px;
+}
 
 
 
