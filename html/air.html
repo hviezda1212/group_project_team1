@@ -2,58 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="/javascript/jquery-3.7.1.js"></script>
-    <script
-      src="https://kit.fontawesome.com/2c827c8cca.js"
-      crossorigin="anonymous"
-    ></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
     />
     <link
       href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/variable/woff2/SUITE-Variable.css"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/2c827c8cca.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javascript/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="/css/air.css" />
     <title>항공편</title>
   </head>
-  
+
   <body>
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- main -->
     <div class="container">
       <div class="main-container">
-        <!-- header -->
-        <header>
-          <div id="header"></div>
-        </header>
-        <!-- main -->
-        <main>
         <div class="main-search-area">
           <div class="button-area">
             <div>
               <input
-              type="radio"
-              class="btn-check"
-              name="options"
-              id="option1"
-              autocomplete="off"
-              checked
-            />
-            <label class="btn btn-secondary" for="option1">왕복</label>
-  
-            <input
+                type="radio"
+                class="btn-check"
+                name="options"
+                id="option1"
+                autocomplete="off"
+                checked
+              />
+              <label
+                class="btn btn-secondary"
+                style="
+                  background-color: var(--blue-800);
+                  border-color: var(--blue-800);
+                  font-weight: 600;
+                  border-radius: var(--radius-50);
+                "
+                for="option1"
+                >왕복</label
+              >
+
+              <input
                 type="radio"
                 class="btn-check"
                 name="options"
                 id="option2"
                 autocomplete="off"
               />
-              <label class="btn btn-secondary" for="option2">편도</label>
-  
+              <label
+                class="btn btn-secondary"
+                style="
+                  background-color: var(--blue-600);
+                  border-color: var(--blue-600);
+                  font-weight: 600;
+                  border-radius: var(--radius-50);
+                "
+                for="option1"
+                >편도</label
+              >
+
               <input
                 type="radio"
                 class="btn-check"
@@ -61,250 +78,405 @@
                 id="option3"
                 autocomplete="off"
               />
-              <label class="btn btn-secondary" for="option3">다구간</label>
+              <label
+              class="btn btn-secondary"
+              style="
+                background-color: var(--blue-600);
+                border-color: var(--blue-600);
+                font-weight: 600;
+                border-radius: var(--radius-50);
+              "
+              for="option1"
+              >다구간</label
+            >
             </div>
 
-              <a class="icon-link icon-link-hover" href="#">
-                회원 예약내역
-                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-              </a>
-              <a class="icon-link icon-link-hover" href="#">
-                비회원 예약내역
-                <svg class="bi" aria-hidden="true"><use xlink:href="#arrow-right"></use></svg>
-              </a>
+            <a class="icon-link icon-link-hover" href="#">
+              회원 예약내역 >
+            </a>
+            <a class="icon-link icon-link-hover" href="#">
+              비회원 예약내역 >
+            </a>
           </div>
 
           <div class="input-area">
-            <div class="btn-group" role="group" aria-label="Basic outlined example">
-              <button type="button" class="btn btn-outline-primary">Left</button>
-              <button type="button" class="btn btn-outline-primary">Middle</button>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <button type="button" class="btn btn-outline-primary">
+                Left
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Middle
+              </button>
             </div>
-            <div class="btn-group" role="group" aria-label="Basic outlined example">
-              <button type="button" class="btn btn-outline-primary">Left</button>
-              <button type="button" class="btn btn-outline-primary">Middle</button>
+            <div
+              class="btn-group"
+              role="group"
+              aria-label="Basic outlined example"
+            >
+              <button type="button" class="btn btn-outline-primary">
+                Left
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Middle
+              </button>
             </div>
           </div>
-          <div class="input-area" style="padding-top : 0px;">
+          <div class="input-area" style="padding-top: 0px">
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
               <label class="form-check-label" for="inlineCheckbox1">직항</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">무료 수하물 가능</label>
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2"
+                >무료 수하물 가능</label
+              >
             </div>
           </div>
           <div class="line">
-            <button type="button" class="btn btn-primary btn-lg" style="margin-bottom: 40px;">항공권 검색</button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg btn-style"
+              style="
+                margin-bottom: 30px;
+                background-color: var(--mint-900);
+                border-color: var(--mint-900);
+                font-weight: 600;
+                border-radius: var(--radius-10);
+              "
+            >
+              항공권 검색
+            </button>
           </div>
           <div class="latest-area">
-            <h3 class="title" style="font-size: 99%;">최근 검색한 항공권</h3>
+            <h3 class="title" style="font-size: 99%">최근 검색한 항공권</h3>
           </div>
+
+          <div class="latest-box-area">
           <div class="row">
             <div class="col-sm-6 mb-3 mb-sm-0">
               <div class="card">
                 <div class="card-body">
-                  <div class="exit-area"><button type="button" class="btn-close" aria-label="Close"></button></div>
+                  <div class="exit-area">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      aria-label="Close"
+                    ></button>
+                  </div>
                   <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="col-sm-6">
               <div class="card">
                 <div class="card-body">
-                  <div class="exit-area"><button type="button" class="btn-close" aria-label="Close"></button></div>
+                  <div class="exit-area">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      aria-label="Close"
+                    ></button>
+                  </div>
                   <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">
+                    With supporting text below as a natural lead-in to
+                    additional content.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          </div>
+        </div>
 
-          <div class="title-area">
-            <h2 class="title">프로모션</h2>
-          </div>
-          <div class="promo-area">
-            <div id="carouselExampleCaptions" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/asset/image/air/busan.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="/asset/image/air/jeju.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="/asset/image/air/jeonju.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          
 
-          <div class="title-area">
-            <h2 class="title">검색 상위 지역 TOP4</h2>
+        </div>
+        <div class="title-area">
+          <h2
+            class="title"
+            style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
+          >
+            프로모션
+          </h2>
+        </div>
+        <div class="promo-area">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="/asset/image/air/busan.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/asset/image/air/jeju.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/asset/image/air/jeonju.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="item-box">
-            <div
-              class="item"
-              style="background-image: url(/asset/image/air/jeju.png)"
-            >
-              <div class="item-cap">
-                <div class="title-cap-box">
-                  <h3>제주</h3>
-                  <p class="caption">제주에서 나만의 겨울을 채우다</p>
-                </div>
-                <h4 class="price">29,500원</h4>
-                <div class="tags">
-                  <p class="tag">#한라산</p>
-                  <p class="tag">#동백꽃</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(/asset/image/air/jeonju.png)"
-            >
-              <div class="item-cap">
-                <div class="title-cap-box">
-                  <h3>전주</h3>
-                  <p class="caption">가장 한국적인 도시, 전주</p>
-                </div>
-                <h4 class="price">29,500원</h4>
-                <div class="tags">
-                  <p class="tag">#한옥마을</p>
-                  <p class="tag">#비빔밥</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(/asset/image/air/busan.png)"
-            >
-              <div class="item-cap">
-                <div class="title-cap-box">
-                  <h3>부산</h3>
-                  <p class="caption"></p>
-                </div>
-                <h4 class="price">29,500원</h4>
-                <div class="tags">
-                  <p class="tag">#광안리</p>
-                  <p class="tag">#맛집</p>
-                </div>
-              </div>
-            </div>
-            <div
-              class="item"
-              style="background-image: url(/asset/image/air/suwon.png)"
-            >
-              <div class="item-cap">
-                <div class="title-cap-box">
-                  <h3>수원</h3>
-                  <p class="caption"></p>
-                </div>
-                <h4 class="price">29,500원</h4>
-                <div class="tags">
-                  <p class="tag">#행궁</p>
-                  <p class="tag">#화성</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="title-area">
-            <h2 class="title">누나 투어 추천 지역</h2>
+        <div class="title-area">
+          <h2
+            class="title"
+            style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
+          >
+            검색 상위 지역 TOP4
+          </h2>
+        </div>
+        <div class="item-box">
+          <div
+            class="item"
+            style="background-image: url(/asset/image/air/jeju.png)"
+          >
+            <div class="item-cap">
+              <div class="title-cap-box">
+                <h3>제주</h3>
+                <p class="caption">제주에서 나만의 겨울을 채우다</p>
+              </div>
+              <h4 class="price">29,500원</h4>
+              <div class="tags">
+                <p class="tag">#한라산</p>
+                <p class="tag">#동백꽃</p>
+              </div>
+            </div>
           </div>
-          <div class="item-box">
-            <div class="item2">
-              <div class="color-cover"></div>
-            </div>
-            <div class="item2">
-              <div class="color-cover"></div>
-            </div>
-            <div class="item2">
-              <div class="color-cover"></div>
-            </div>
-            <div class="item2">
-              <div class="color-cover"></div>
+          <div
+            class="item"
+            style="background-image: url(/asset/image/air/jeonju.png)"
+          >
+            <div class="item-cap">
+              <div class="title-cap-box">
+                <h3>전주</h3>
+                <p class="caption">가장 한국적인 도시, 전주</p>
+              </div>
+              <h4 class="price">29,500원</h4>
+              <div class="tags">
+                <p class="tag">#한옥마을</p>
+                <p class="tag">#비빔밥</p>
+              </div>
             </div>
           </div>
+          <div
+            class="item"
+            style="background-image: url(/asset/image/air/busan.png)"
+          >
+            <div class="item-cap">
+              <div class="title-cap-box">
+                <h3>부산</h3>
+                <p class="caption"></p>
+              </div>
+              <h4 class="price">29,500원</h4>
+              <div class="tags">
+                <p class="tag">#광안리</p>
+                <p class="tag">#맛집</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url(/asset/image/air/suwon.png)"
+          >
+            <div class="item-cap">
+              <div class="title-cap-box">
+                <h3>수원</h3>
+                <p class="caption"></p>
+              </div>
+              <h4 class="price">29,500원</h4>
+              <div class="tags">
+                <p class="tag">#행궁</p>
+                <p class="tag">#화성</p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-          <div class="title-area">
-            <h2 class="title">항공권 공지사항</h2>
+        <div class="title-area">
+          <h2
+            class="title"
+            style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
+          >
+            누나 투어 추천 지역
+          </h2>
+        </div>
+        <div class="item-box">
+          <div
+            class="item2"
+            style="background-image: url(/asset/image/air/daejeon.png)"
+          >
+            <h3>대전</h3>
           </div>
-          <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
-        </main>
-        <!-- footer -->
-        <footer>
-          <div id="footer"></div>
-        </footer>
+          <div
+            class="item2"
+            style="background-image: url(/asset/image/air/namwon.png)"
+          >
+            <h3>남원</h3>
+          </div>
+          <div
+            class="item2"
+            style="background-image: url(/asset/image/air/gapeong.png)"
+          >
+            <h3>가평</h3>
+          </div>
+          <div
+            class="item2"
+            style="background-image: url(/asset/image/air/geongju.png)"
+          >
+            <h3>경주</h3>
+          </div>
+        </div>
+
+        <div class="title-area">
+          <h2
+            class="title"
+            style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
+          >
+            항공권 공지사항
+          </h2>
+          <a href="#">더보기 ></a>
+        </div>
+        <table class="table table-hover">
+          <thead>
+            <tr style="border-color: red">
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>[공지] 2024년 1월 1일 부 유류할증료 안내</td>
+              <td></td>
+              <td style="text-align: right">2023-12-27</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>[공지] 에어서울 국내선 시스템 이전 작업에 따른 이용 제한 안내</td>
+              <td></td>
+              <td style="text-align: right">2023-12-18</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>[공지] 최초 발권 후 24시간 이내 환불 처리 방침 변경 항공사 안내</td>
+              <td></td>
+              <td style="text-align: right">2023-11-22</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>[공지] 개인정보처리방침(시행일 23.11.16) 개정 공지</td>
+              <td></td>
+              <td style="text-align: right">2023-11-09</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-        <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"
-      ></script>
-      <script>
-        // header와 footer를 불러 오는 스트립트
-        $(function () {
-          $("#header").load("/html/header.html");
-          $("#footer").load("/html/footer.html");
-        });
-      </script>
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // header와 footer를 불러 오는 스트립트
+      $(function () {
+        $("#header").load("/html/header.html");
+        $("#footer").load("/html/footer.html");
+      });
+    </script>
   </body>
 </html>
