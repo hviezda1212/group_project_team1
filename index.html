@@ -3,26 +3,134 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>누나투어</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <script src="javascript/jquery-3.7.1.js"></script> <!--Jquey를 사용하기 위해 필요한 부분-->
+        <script
+            src="https://kit.fontawesome.com/2c827c8cca.js"
+            crossorigin="anonymous"
+            ></script>
+        <style>
+
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            video {
+                position: absolute;
+                left: 0;
+                top: 0;
+                min-width: 100%;
+                min-height: 100%;
+                background-repeat: no-repeat;
+                object-fit: cover;
+                background-position: center;
+                z-index: -1;
+            }
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                background: transparent;
+                backdrop-filter: blur(20px);
+                padding: 40px;
+                width: 500px;
+                top: -150px;
+                box-shadow: 1px 1px 10px black;
+                border-radius: 10px;
+            }
+
+            .additional-fields {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 2s ease;
+            }
+            
+            .sigin {
+                overflow: hidden;
+                transition: max-height 2s ease;
+                width: 400px;
+                top: -150px;
+            }
+        
+            .sigin .open {
+                max-height: 500px; /* 원하는 높이로 조절하세요 */
+            }
+
+            input, button {
+                margin: 10px 0;
+            }
+
+            i {
+                font-size: 8rem;
+                color: #28b5b5;
+            }
+
+        </style>
     </head>
     <body>
-        <div id="header"></div><!--불러온 header가 생기는 위치-->
+        <video src="/asset/video/bg.mp4" autoplay loop muted></video>
+        <div class="container main">
+            <div class="sigin">
+                <form id="loginForm">
+                    <i class="logo-icon fa-solid fa-mountain-sun"></i><span>누나투어</span>
+                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            
+                    <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                    </div>
 
-        <div>
-            메인 내용을 적는 부분
+                    <!-- 추가 입력 필드 -->
+                    <div class="additional-fields">
+                        <!-- 추가 입력 필드들을 이곳에 추가 -->
+                        <div class="form-floating">
+                        <input type="text" class="form-control" id="additionalInput1" placeholder="Additional Field 1">
+                        <label for="additionalInput1">Confirm password</label>
+                        </div>
+                        <div class="form-floating">
+                        <input type="text" class="form-control" id="additionalInput2" placeholder="Additional Field 2">
+                        <label for="additionalInput2">Nick Name</label>
+                        </div>
+                    </div>
+            
+                    <div class="form-check text-start my-3">
+                        <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">Remember me</label>
+                    </div>
+                    <button class="btn btn-primary w-100 py-2" type="button" onclick="toggleAdditionalFields()">가입하기</button>
+                    <a class="btn btn-primary w-100 py-2" type="button" href="html/main.html" >로그인</a>
+                </form>
+            </div>
         </div>
-
-        <div id="footer"></div><!--불러온 footer가 생기는 위치-->
-
-        <script>
-            // header와 footer를 불러 오는 스트립트
-            $(function(){
-                $("#header").load('html/header.html');
-                $("#footer").load('html/footer.html');
-            });
-        </script>
+        
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        
+        <script>
+            function toggleAdditionalFields() {
+                const additionalFields = document.querySelector('.additional-fields');
+                const sigin = document.querySelector('.sigin');
+
+                additionalFields.classList.toggle('open');
+                sigin.classList.toggle('open');
+
+                // 현재 상태에 따라 버튼과 추가 입력 필드 변경
+                if (additionalFields.classList.contains('open')) {
+                    // 확인하기로 변경
+                    document.querySelector('.btn-primary').innerText = '확인하기';
+                } else {
+                    // 가입하기로 변경
+                    document.querySelector('.btn-primary').innerText = '가입하기';
+                }
+            }
+        </script>
     </body>
 </html>
