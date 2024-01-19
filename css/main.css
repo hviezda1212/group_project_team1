@@ -1,0 +1,359 @@
+:root {
+    /* color */
+    --white: #fff;
+    --black: #000;
+    --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
+    --blue-800: #4B778D; /* 메인컬러1 : 네이비 */
+    --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
+    --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
+    --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
+    --yellow-green: #D2E69C; /* 메인컬러4 가장 밝은 연두색 */
+    
+    /* border-radius */
+    --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
+    --radius-50: 50px; /* 완전히 둥글게 */	
+
+/* margin */	
+    --margin-16: 16px; /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
+    --margin-107: 107px; /* 섹션과 섹션사이에 넣어주세요 */
+
+/* box-shadow */
+    --shadow: 0 2px 8px #38556450; /* hover시 많이 쓰이는 그림자 */
+}
+
+/* 로고 서체 */
+@font-face {
+    font-family: 'jalnan'; /* 서체의 이름을 지정합니다. */
+    src: url("../asset/font/Jalnan2TTF.ttf"); /* 서체 파일의 경로를 지정합니다. */
+}
+/* 나머지 서체 */
+@font-face {
+    font-family: 'suit';
+    src: url("../asset/font/Jalnan2TTF.ttf");
+}
+
+body{
+    font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li{
+  padding-left: 0 !important;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+a {
+    color: var(--blue-900);
+    text-decoration: none !important;
+  }
+
+.title { /* 섹션 제목 */
+    margin-top: var(--margin-107);
+    margin-bottom: 16px;
+    color: var(--blue-900);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.card-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto;
+}
+
+.card-item{ 
+    margin-right: 10px;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.card-item h3,p {
+    margin: 0;
+}
+
+
+/* main-banner */
+.main-banner-box{
+    height: 700px;
+}
+
+
+/* main */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    max-width: 1086px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    width: 100%;
+}
+
+.section-container{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+
+/* region section */
+.region-card-container{
+    margin-bottom: var(--margin-107);
+}
+
+.region-section .card-item{ 
+    width: 252.2px;
+    height: 340px;
+    position: relative;
+    padding: 40px 30px 20px 25px;
+    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-size: cover;
+    box-shadow: 10px 10px 200px 10px #292e30bd inset;
+}
+
+.region-section .card-content{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.region-section h3{
+    margin-bottom: 10px;
+    font-size: 37px;
+}
+
+.region-section .region-list{
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+
+.region-section .look-btn{
+    display: flex;
+    justify-content: space-between;
+}
+
+.region-section .look-btn button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--radius-10);
+    background-color: var(--white);
+}
+
+
+
+/* hot-deal section */
+.hot-deal-box{
+    width: 100%;
+    display: flex;
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.hot-deal-cap{
+    width: 100%;
+    padding: 40px;
+    background-color: var(--mint-900);
+    box-shadow: -4px 0 20px rgba(34, 34, 34, 0.589);
+}
+
+.time-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: var(--white);
+    border-radius: var(--radius-50);
+}
+
+.time-area p{
+    margin-left: 7px;
+    margin-bottom: 0;
+}
+
+.cap-area{
+    height: 83%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 25px 0  0 25px;
+    color: var(--white);
+}
+
+.hot-deal-cap .sub-cap{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--blue-900);
+}
+
+.hot-deal-cap .price-cap{
+    display: flex;
+    justify-content: flex-end;
+    margin: 160px 0 0 0;
+    font-size: 43px;
+}
+
+.cap-area .check-btn{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.check-btn img{
+    margin-left: 10px;
+}
+
+
+/* food section */
+
+
+/* tour section */
+.tour-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-items p{
+    margin: 0;
+}
+
+.tour-items a{
+    color: var(--white);
+}
+.tour-items a:hover{
+    color: var(--white);
+}
+
+.item-group{
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.tour-item{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50%;
+    padding: 20px 26px;
+    border-radius: var(--radius-10);
+    background-color: gray;
+    box-shadow: 0px -70px 50px 0 #00000093 inset;
+    overflow: hidden;
+}
+
+.tour-items>.tour-item:first-child{
+    width: 361px;
+    height: 464px;
+    margin-right: 16px;
+    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+}
+
+.item-group .tour-item{
+    background-image: url(/asset/image/main/tour2.jpeg);
+    background-size: cover;
+}
+
+/* .item-group-first .tour-item:nth-child(1){
+    background-image: url(/asset/image/main/tour2.jpeg);
+    background-size: cover;
+} */
+
+.item-group .tour-item:first-child{
+    margin-bottom: 16px;
+}
+
+.item-group-first{
+    margin-right: 16px;
+}
+
+.item-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 34px 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    color: var(--white);
+    background-color: #28b5b5c7;;
+}
+
+.tour-item:hover .item-hover{
+    display: flex;
+}
+
+.item-hover{
+    display: none;
+}
+
+.tour-item:hover .tour-title{
+    opacity: 0;
+}
+
+.item-hover h3{
+    font-size: 20px;
+}
+
+.item-hover p {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.item-hover .bottom-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.item-hover .tags{
+    display: flex;
+}
+
+.tags .tag{
+    margin-right: 5px;
+    padding: 4px 8px;
+    border-radius: var(--radius-50);
+    font-size: 13px;
+    color: var(--blue-800);
+    background-color: var(--light-green);
+}
+
+.item-hover .price{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+
+
+
+/* flight section */
