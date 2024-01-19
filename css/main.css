@@ -491,7 +491,16 @@ section{
 }
 
 
-
-
-
 /* flight section */
+.flight-items{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+
+.flight-item{
+    width: 538px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
