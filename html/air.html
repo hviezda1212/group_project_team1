@@ -90,20 +90,27 @@
                 >다구간</label
               >
             </div>
-
-            <a class="icon-link icon-link-hover" href="#"> 회원 예약내역 > </a>
-            <a class="icon-link icon-link-hover" href="#">
-              비회원 예약내역 >
-            </a>
+            <div>
+              <a
+                class="icon-link icon-link-hover"
+                href="#"
+                style="margin-right: 16px"
+              >
+                회원 예약내역 >
+              </a>
+              <a class="icon-link icon-link-hover" href="#">
+                비회원 예약내역 >
+              </a>
+            </div>
           </div>
 
-          <div class="input-area">
+          <div class="input-area" style="justify-content: space-between;">
             <div class="where">
               <input
                 type="text"
                 readonly="readonly"
                 placeholder="김포 (GMP)"
-                style="font-weight: 800; width:190px; padding-left:16px;"
+                style="font-weight: 800; width: 190px; padding-left: 16px"
               />
               <button class="mrt_btn_swapper" style="border-style: none">
                 도착 출발 교체
@@ -112,7 +119,7 @@
                 type="text"
                 readonly="readonly"
                 placeholder="도착지가 어디인가요?"
-                style="width:210px; padding-left:20px;"
+                style="width: 210px; padding-left: 20px"
               />
             </div>
 
@@ -139,12 +146,12 @@
                 type="text"
                 readonly="readonly"
                 placeholder="승객 1명, 일반석"
-                style="font-weight: 800; width:210px; padding-left:20px;"
+                style="font-weight: 800; width: 170px; padding-left: 20px"
               />
             </div>
           </div>
 
-          <div class="input-area" style="padding-top: 0px">
+          <div class="input-area" style="padding-top: 0px; padding-bottom:0px;">
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
@@ -169,59 +176,42 @@
           <div class="line">
             <button
               type="button"
-              class="btn btn-primary btn-lg btn-style"
-              style="
-                margin-bottom: 30px;
-                background-color: var(--mint-900);
-                border-color: var(--mint-900);
-                font-weight: 600;
-                border-radius: var(--radius-10);
-              "
+              class="flight-btn"
             >
               항공권 검색
             </button>
+          </div>
+          <div class="notice-line">
+            <div class="notice">
+              <span class="mark_notice">공지</span>
+              <div class="txt"> [공지] 2024년 1월 1일 부 유류할증료 안내</div>
+              <span class="meta_date">2023-12-27</span>
+            </div>
+            <div>
+              <a href="#">모두보기 ></a>
+            </div>
           </div>
           <div class="latest-area">
             <h3 class="title" style="font-size: 99%">최근 검색한 항공권</h3>
           </div>
 
           <div class="latest-box-area">
-            <div class="row">
-              <div class="col-sm-6 mb-3 mb-sm-0">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="exit-area">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">
-                      With supporting text below as a natural lead-in to
-                      additional content.
-                    </p>
-                  </div>
-                </div>
+            <div class="latest-card">
+              <div class="exit-area">
+                <label class="label_box">왕복</label>
+                <button
+                  type="button"
+                  class="btn-close"
+                  aria-label="Close"
+                ></button>
               </div>
-              <div class="col-sm-6">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="exit-area">
-                      <button
-                        type="button"
-                        class="btn-close"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">
-                      With supporting text below as a natural lead-in to
-                      additional content.
-                    </p>
-                  </div>
-                </div>
+              <div class="air-line-title">
+                <div>김포 (GMP)</div>
+                <em class="ico_itinerary_03"></em>
+                <div>제주 (CJU)</div>
+              </div>
+              <div class="air-line-text">
+                1월 23일 - 1월 25일 : 성인1 : 전체
               </div>
             </div>
           </div>

@@ -83,7 +83,7 @@ h4{
 /* 검색 영역 */
 .main-search-area{
     width: 100%;
-    height: 600px;
+    height: 560px;
     background-size: cover;
     background-position: center 45%;
     background-repeat: no-repeat;
@@ -93,7 +93,9 @@ h4{
 
 .button-area{
     display: flex;
+    justify-content: space-between;
     padding : 20px;
+    align-items: center;
 }
 
 .btn-style{
@@ -109,7 +111,7 @@ h4{
 .latest-area{
     display: flex;
     padding : 20px;
-    padding-bottom : 5px;
+    padding-bottom : 10px;
 }
 
 .latest-box-area
@@ -117,9 +119,91 @@ h4{
     margin:20px;
     margin-top: 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
+}
+
+.latest-card{
+    position: relative;
+    width: 300px;
+    height: 120px;
+    display: flex;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    cursor: pointer;
+    flex-flow: column;
+}
+
+.label_box {
+    font-size: 11px;
+    height: 18px;
+    line-height: 16px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: #28b5b5;
+    background-color: #fff;
+    border: 1px solid #28b5b5;
+}
+
+.mark_notice {
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    background-color: #8FD9A8;
+    color: #fff;
+    text-align: center;
+}
+
+.notice{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.meta_date {
+    display: inline-block;
+    position: relative;
+    margin-left: 8px;
+    padding-left: 10px;
+    font-size: 13px;
+    line-height: 22px;
+    color: #848C94;
+}
+
+.air-line-title{
+    padding-left:16px;
+    font-weight:600;
+    font-size:18px;
+    display:flex;
+    align-items: center;
+}
+
+.ico_itinerary_03 {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(/asset/image/air/ico_fromto_03.png) no-repeat right center;
+    font-size: 0px;
+    text-indent: -9999px;
+    background-size: 20px;
+    margin:6px;
+}
+
+.air-line-text{
+    padding-left:16px;
+    font-size:13px;
+    padding-bottom:16px;
 }
 
 .title-area {
@@ -131,7 +215,10 @@ h4{
 .exit-area {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    padding:16px;
+    padding-bottom:8px;
+    align-items: center;
 }
 
 .line{
@@ -140,6 +227,16 @@ h4{
     border-bottom : 1px solid var(--blue-600);
     margin-left : 20px;
     margin-right : 20px;
+}
+
+.notice-line{
+    display: flex;
+    border-bottom : 1px solid var(--blue-600);
+    margin-left : 20px;
+    margin-right : 20px;
+    height:80px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .promo-area {
@@ -283,11 +380,10 @@ img{
 .where{
     position: relative;
     width: 450px;
-    height: 48px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 16px;
     border: 1px solid #c4ced3;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -299,10 +395,9 @@ img{
 .when{
     position: relative;
     width: 310px;
-    height: 48px;
+    height: 50px;
     display: flex;
     align-items: center;
-    margin-right: 16px;
     border: 1px solid #c4ced3;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -314,8 +409,8 @@ img{
 
 .who{
     position: relative;
-    width: 220px;
-    height: 48px;
+    width: 240px;
+    height: 50px;
     display: flex;
     align-items: center;
     border: 1px solid #c4ced3;
@@ -325,6 +420,23 @@ img{
     justify-content: center;
     background-size: cover;
     cursor: pointer;
+}
+
+.flight-btn{
+    margin-bottom: 30px;
+    background-color: var(--mint-900);
+    border-color: var(--mint-900);
+    font-weight: 700;
+    border-radius: var(--radius-10);
+    padding: 10px 18px;
+    font-size: 18px;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+
+.flight-btn:hover{
+    color: #D2E69C;
 }
 
 .mrt_btn_swapper {
@@ -352,11 +464,10 @@ input{
 }
 
 .people {
-    display: inline-block;
-    padding-left: 44px;
-    font-size: 15px;
-    color: #343a40;
-    background-image: url(/asset/image/air/ico_user.svg) no-repeat 12px center #fff;
+    float: left;
+    height: 48px;
+    padding-left: 44px !important;
+    background: url(/asset/image/air/ico_user.svg) no-repeat 12px center #fff;
     background-size: 28px;
     filter: opacity(0.6);
 }
