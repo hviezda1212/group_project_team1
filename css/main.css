@@ -612,7 +612,10 @@ section{
         margin: 0;
     }
 
-
+    /* sleep section */
+    .sleep-card-container{
+        display: flex;
+    }
 
 
 }
