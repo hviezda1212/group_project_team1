@@ -33,18 +33,6 @@
   src: url("/asset/font/SUIT-Variable.ttf");
 }
 
-/* 모바일 버전 */
-@media screen and (max-width: 48rem) {
-  .header-area,
-  h1 {
-    margin: 0 !important;
-  }
-  .nav-bar {
-    /* width: 100vw; */
-    position: fixed !important;
-  }
-}
-
 /* css 스타일 초기화 */
 html,
 body,
@@ -95,7 +83,13 @@ input {
   cursor: pointer;
 }
 
-a:hover {
+small {
+  color: var(--blue-900);
+  cursor: pointer;
+  font-size:medium !important;
+}
+
+small:hover {
   color: #28b5b5 !important;
 }
 
@@ -131,6 +125,11 @@ a:hover {
 }
 
 .input-area {
+  display: flex;
+  padding: 20px;
+}
+
+.check-area {
   display: flex;
   padding: 20px;
 }
@@ -269,9 +268,12 @@ a:hover {
   margin-bottom: 107px;
 }
 
-.item-box {
+.card-wrapper{
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
   margin-bottom: 107px;
 }
 
@@ -281,7 +283,6 @@ a:hover {
   height: 333px;
   display: flex;
   align-items: center;
-  margin-right: 24px;
   border: 1px solid #c4ced3;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
@@ -306,7 +307,6 @@ a:hover {
   height: 333px;
   display: flex;
   align-items: center;
-  margin-right: 24px;
   border: 1px solid #c4ced3;
   background-color: var(--white);
   border-radius: 10px;
@@ -368,12 +368,12 @@ a:hover {
   width: 450px;
   height: 50px;
   display: flex;
+  overflow:hidden;
   align-items: center;
   justify-content: center;
   border: 1px solid #c4ced3;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  overflow: hidden;
   background-size: cover;
   cursor: pointer;
 }
@@ -524,4 +524,82 @@ a:hover {
 .form-check-input:checked {
   background-color: #4b778d !important;
   border-color: #4b778d !important;
+}
+
+.row{
+  --bs-gutter-x: 1rem !important;
+}
+
+/* 모바일 버전 */
+@media screen and (max-width: 48rem) {
+  .header-area,
+  h1 {
+    margin: 0 !important;
+  }
+  .nav-bar {
+    /* width: 100vw; */
+    position: fixed !important;
+  }
+
+  .main-container{
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .title{
+    margin-top: 40px;
+    margin-bottom: 22px;
+    font-size: 18px;
+  }
+
+  .button-area {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+
+  .atag, small {
+    opacity: 0;
+    height:0px;
+  }
+
+  .input-area {
+    padding-top:0px;
+    padding-bottom:10px;
+    flex-flow:column;
+  }
+
+  .flight-btn {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .notice-line, .notice {
+    opacity: 0;
+    height:0px;
+  }
+
+  .latest-area {
+    display: flex;
+    padding: 20px;
+    padding-bottom :10px;
+  }
+
+  .where {
+    width: 300px;
+    margin-bottom:3px;
+  }
+
+  .where input{
+    width: 120px !important;
+  }
+  
+  .when {
+    width: 300px;
+    margin-bottom:3px;
+  }
+  
+  .who {
+    width: 300px;
+  }
+  
 }

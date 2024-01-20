@@ -31,7 +31,7 @@
       <div class="main-container">
         <div class="main-search-area">
           <div class="button-area">
-            <div>
+            <div class="radio-btn">
               <input
                 type="radio"
                 class="btn-check"
@@ -90,17 +90,9 @@
                 >다구간</label
               >
             </div>
-            <div>
-              <a
-                class="icon-link icon-link-hover"
-                href="#"
-                style="margin-right: 16px"
-              >
-                회원 예약내역 >
-              </a>
-              <a class="icon-link icon-link-hover" href="#">
-                비회원 예약내역 >
-              </a>
+            <div class="atag">
+              <small style="margin-right: 16px"> 회원 예약내역 > </small>
+              <small> 비회원 예약내역 > </small>
             </div>
           </div>
 
@@ -151,8 +143,8 @@
             </div>
           </div>
 
-          <div class="input-area" style="padding-top: 0px; padding-bottom: 0px">
-            <div class="form-check form-check-inline">
+          <div class="check-area" style="padding-top: 0px; padding-bottom: 0px">
+            <div class="form-check form-check-inline" style="margin-left: 10px">
               <input
                 class="form-check-input"
                 type="checkbox"
@@ -184,11 +176,11 @@
               <span class="meta-date">2023-12-27</span>
             </div>
             <div>
-              <a href="#">모두보기 ></a>
+              <small>모두보기 ></small>
             </div>
           </div>
           <div class="latest-area">
-            <h3 class="title" style="font-size: 99%">최근 검색한 항공권</h3>
+            <h3 style="font-size: 99%">최근 검색한 항공권</h3>
           </div>
 
           <div class="latest-box-area">
@@ -309,7 +301,7 @@
             검색 상위 공항 TOP4
           </h2>
         </div>
-        <div class="item-box">
+        <div class="card-wrapper">
           <div
             class="item"
             style="background-image: url(/asset/image/air/jeju.png)"
@@ -384,7 +376,7 @@
             누나 투어 추천 지역
           </h2>
         </div>
-        <div class="item-box">
+        <div class="card-wrapper">
           <a
             href="#"
             class="item2"
@@ -477,7 +469,7 @@
           >
             항공권 공지사항
           </h2>
-          <a href="#">더보기 ></a>
+          <small>더보기 ></small>
         </div>
         <table class="table table-hover" style="cursor: pointer">
           <thead>
