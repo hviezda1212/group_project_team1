@@ -516,12 +516,23 @@ section{
     border-radius: 20px;
 }
 
-.region-section-mobile{
+.region-section-mobile, sleep-section-mobile{
     display: none;
 }
 
 /* 모바일 버전 */
 @media screen and (max-width: 48rem) {
+    .region-section-pc, .sleep-section-pc{
+        display: none;
+    }
+    .region-section-mobile, .sleep-section-mobile{
+        display: flex;
+    } 
+
+    .region-section-mobile, {
+        display: flex;
+    }
+
     .header-area, h1{
         margin: 0 !important;
     }
@@ -553,13 +564,6 @@ section{
     }
 
     /* region-section */
-    .region-section-pc{
-        display: none;
-    }
-    .region-section-mobile{
-        display: flex;
-    }
-
     .region-card-container{
         flex-flow: column;
         padding-left: 10px;
