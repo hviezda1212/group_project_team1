@@ -516,9 +516,23 @@ section{
     border-radius: 20px;
 }
 
+.region-section-mobile, sleep-section-mobile{
+    display: none;
+}
 
 /* 모바일 버전 */
 @media screen and (max-width: 48rem) {
+    .region-section-pc, .sleep-section-pc{
+        display: none;
+    }
+    .region-section-mobile, .sleep-section-mobile{
+        display: flex;
+    } 
+
+    .region-section-mobile, {
+        display: flex;
+    }
+
     .header-area, h1{
         margin: 0 !important;
     }
@@ -528,8 +542,77 @@ section{
         position: fixed !important;
     }
 
+    .title{
+        margin-top: 40px;
+        margin-bottom: 22px;
+        font-size: 18px;
+    }
+
     /* main-banner */
     .main-banner-box{
         height: 100%;
     }
+
+    /* main */
+    .main-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .card-wrapper{
+        width: 100%;
+    }
+
+    /* region-section */
+    .region-card-container{
+        flex-flow: column;
+        padding-left: 10px;
+        margin-bottom: 40px;
+    }
+
+    .card-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .card-group:nth-child(2){
+        margin-bottom: 0;
+    }
+
+    .region-section .card-item {
+        height: 100%;
+        padding: 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    .region-section .card-img {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 6px;
+        border-radius: var(--radius-50);
+        overflow: hidden;
+    }
+
+    .region-section .card-img img{
+        width: 100%;
+    }
+
+    .region-section h3{
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--blue-900);
+        margin: 0;
+    }
+
+
+
+
 }
