@@ -337,12 +337,12 @@ section{
     border: 0.5px solid rgb(199, 197, 197);
     background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
     background-size: cover;
-    box-shadow: var(--shadow);
     cursor: pointer;
 }
 
 .food-section .card-item:hover{
     color: var(--blue-900);
+    box-shadow: var(--shadow);
 }
 
 .food-section .card-cap{
