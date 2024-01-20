@@ -54,7 +54,6 @@ body{
 }
 
 .title-order {
-    margin: auto;
     max-width: 700px;
 }
 
@@ -66,6 +65,11 @@ body{
 }
 
 /* search-start */
+.content-search {
+    width: 1086px;
+    margin: 0 auto;
+}
+
 .search-parent {
     display: flex;
     justify-content: center;
@@ -82,12 +86,10 @@ body{
     border-radius: 99px;
     font-size: 10px;
     height: 40px;
-    
     border: 1px solid #f5f6f7;
     background-color: #f5f6f7;
     justify-content: center;
     padding-inline: 13px;
-
 }
 
 .search-chk:hover {
@@ -128,7 +130,7 @@ body{
     overflow: hidden;
     width: 1086px;
     margin: 32px auto;
-    height: 105px;
+    height: 130px;
 }
 
 .content-event2 {
@@ -137,8 +139,8 @@ body{
 }
 
 .event-img-size {
-    width: 75px;
-    height: 90px;
+    width: 95px;
+    height: 110px;
     border-radius: 0.8rem;
 }
 
@@ -157,7 +159,7 @@ body{
 }
 
 .event-img-a>p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 700;
 }
 
@@ -168,7 +170,6 @@ body{
 .event-box>p {
     margin-bottom: 0;
 }
-
 /* event-end */
 
 /* ad-start */
@@ -215,11 +216,7 @@ body{
 /* ad-end */
 
 /* top-start */
-.content-top1 {
-    margin-bottom: 10px;
-}
-
-.top1 {
+.margin-107 {
     display: flex;
     justify-content: center;
     margin-top: 107px;
@@ -340,7 +337,7 @@ body{
     padding-top: 5px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: flex-end;
     font-size: 20px;
 }
@@ -362,4 +359,76 @@ body{
 }
 /* top-end */
 
-/* top-start */
+/* goto-start */
+.goto {
+    width: 1086px;
+    margin: 0 auto;
+}
+
+.goto-space {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goto-main {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.goto-img>img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.goto-text-main {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 10px;
+}
+
+.goto-text-content1-star {
+    font-size: 15px;
+}
+
+.goto-img-star {
+    width: 20px;
+}
+
+.goto-text-content1-score {
+    font-weight: 900;
+}
+
+.goto-text-content1-score-size {
+    font-size: 18px;
+}
+
+.goto-text-content2 {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-end;
+    font-size:15px;
+}
+
+.goto-text-content2-bfPrc {
+    text-decoration:line-through;
+}
+
+.goto-text-content2-coupon {
+    background-color: #f2f2f2;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.goto-text-content2-afPrc {
+    font-size: 20px;
+    font-weight: 900;
+}
+/* goto-end */
+
+
