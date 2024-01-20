@@ -41,6 +41,7 @@
 
 body {
     font-family: suit;
+    min-width: 500px;
 }
 
 .search-back {
@@ -352,6 +353,8 @@ body {
 .city-card-group .city-card {
     border-radius: 10px;
     overflow: hidden;
+    min-width: 200px;
+    height: 400px;
 }
 
 .city-card-group {
@@ -370,6 +373,10 @@ body {
     overflow: hidden;
 }
 
+.city-card img {
+    height: 100%;
+    object-fit: cover;
+}
 
 .city-hover {
     position: absolute;
@@ -387,6 +394,22 @@ body {
     margin-top: 30px;
     color: var(--white);
     font-weight: bold;
+}
+
+.city-btn {
+    border: 3px solid var(--white);
+    background-color: var(--blue-700);
+    padding: 2px 10px;
+    border-radius: var(--radius-10);
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.city-btn:hover {
+    background-color: var(--white);
+    border-color: var(--mint-900);
+    color: var(--mint-900);
 }
 
 .over {
