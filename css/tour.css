@@ -85,19 +85,20 @@ section{
     transform: translateX(-50%);
   }
 .city{
-    background: url(../asset/image/tour/seoul-forest.bmp);
     width: 200px;
     height: 150px;
     border: none;
     border-radius: 30px;
     position: relative;
     margin: 0 24px 0 0;
+    background-size: contain;
+
 }
 .city p{
     bottom: 0;
     font-size: 25px;
     font-weight: bold;
-    color: #273e49;
+    color: white;
     position: absolute;
     margin: 15px;
 }
@@ -190,7 +191,7 @@ section{
     width: 300px;
     text-align: left;
     padding: 0;
-    color: #eee;
+    color:white;
     transform: translate(0, -50%);
     display: none;
 
@@ -200,7 +201,7 @@ section{
     z-index: 11111;
 }
 .item .name{
-    font-size: 40px;
+    font-size: 31px;
     font-weight: bold;
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards; 
