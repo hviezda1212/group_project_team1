@@ -33,6 +33,18 @@
   src: url("/asset/font/SUIT-Variable.ttf");
 }
 
+/* 모바일 버전 */
+@media screen and (max-width: 48rem) {
+  .header-area,
+  h1 {
+    margin: 0 !important;
+  }
+  .nav-bar {
+    /* width: 100vw; */
+    position: fixed !important;
+  }
+}
+
 /* css 스타일 초기화 */
 html,
 body,
@@ -72,6 +84,21 @@ h4 {
   font-weight: 700;
 }
 
+img {
+  width: 1086px;
+  height: 100%;
+}
+
+input {
+  border-color: #fff;
+  border-style: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #28b5b5 !important;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -83,11 +110,6 @@ h4 {
   justify-content: center;
   align-items: center;
   max-width: 1086px;
-}
-
-.margin {
-  width: 180px;
-  height: 100vh;
 }
 
 /* 검색 영역 */
@@ -106,11 +128,6 @@ h4 {
   justify-content: space-between;
   padding: 20px;
   align-items: center;
-}
-
-.btn-style {
-  background-color: #28b5b5;
-  border-color: #28b5b5;
 }
 
 .input-area {
@@ -179,7 +196,7 @@ h4 {
   cursor: pointer;
 }
 
-.meta_date {
+.meta-date {
   display: inline-block;
   position: relative;
   margin-left: 8px;
@@ -197,7 +214,7 @@ h4 {
   align-items: center;
 }
 
-.ico_itinerary_03 {
+.ico-itinerary {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -272,6 +289,7 @@ h4 {
   flex-flow: column;
   justify-content: flex-end;
   background-size: cover;
+  cursor: pointer;
 }
 
 .item:nth-child(4) {
@@ -301,11 +319,6 @@ h4 {
 
 .item2:nth-child(4) {
   margin-right: 0px;
-}
-
-.item2:hover {
-  filter: blur(4px);
-  filter: brightness(0.4);
 }
 
 .item-cap {
@@ -348,41 +361,6 @@ h4 {
   font-size: 13px;
   font-weight: 300;
   background-color: #28b5b5;
-}
-
-.item-cap-texts {
-  position: absolute;
-  width: 100%;
-  height: 45%;
-  padding: 20px;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  color: #fff;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.item-cap-texts .caption {
-  color: rgba(255, 255, 255, 0.822);
-}
-
-.item-cap-texts .tag {
-  color: #4b778d;
-  background-color: #8fd9a8;
-}
-
-.event-banner {
-  width: 100%;
-  height: 300px;
-  background-color: gray;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-img {
-  width: 1086px;
-  height: 100%;
 }
 
 .where {
@@ -447,7 +425,7 @@ img {
   color: #d2e69c;
 }
 
-.mrt_btn_swapper {
+.btn-swapper {
   display: inline-block;
   width: 32px;
   height: 32px;
@@ -457,18 +435,13 @@ img {
   font-size: 0;
 }
 
-.date_selector {
+.date-selector {
   float: left;
   height: 48px;
   padding-left: 44px !important;
   background: url(/asset/image/air/ico_calendar.svg) no-repeat 12px center #fff;
   background-size: 28px;
   filter: opacity(0.6);
-}
-
-input {
-  border-color: #fff;
-  border-style: none;
 }
 
 .people {
@@ -478,4 +451,77 @@ input {
   background: url(/asset/image/air/ico_user.svg) no-repeat 12px center #fff;
   background-size: 28px;
   filter: opacity(0.6);
+}
+
+.tour-title {
+  color: #fff;
+}
+
+.item2:hover .tour-title {
+  opacity: 0;
+}
+
+.item2:hover .bottom-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item2:hover .item-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 34px 25px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: #28b5b5c7;
+}
+
+.item2:hover .tag {
+  color: #4b778d;
+  background-color: #8fd9a8;
+  margin: 0.2em;
+}
+
+.tour-item:hover .item-hover {
+  display: flex;
+}
+
+.item-hover {
+  display: none;
+}
+
+.tour-item:hover .tour-title {
+  opacity: 0;
+}
+
+.item-hover h3 {
+  font-size: 20px;
+}
+
+.item-hover p {
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+.item-hover .bottom-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item-hover .tags {
+  display: flex;
+  flex-flow: column;
+}
+
+.form-check-input:checked {
+  background-color: #4b778d !important;
+  border-color: #4b778d !important;
 }

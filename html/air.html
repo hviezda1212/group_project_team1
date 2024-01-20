@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <div class="input-area" style="justify-content: space-between;">
+          <div class="input-area" style="justify-content: space-between">
             <div class="where">
               <input
                 type="text"
@@ -112,7 +112,7 @@
                 placeholder="김포 (GMP)"
                 style="font-weight: 800; width: 190px; padding-left: 16px"
               />
-              <button class="mrt_btn_swapper" style="border-style: none">
+              <button class="btn-swapper" style="border-style: none">
                 도착 출발 교체
               </button>
               <input
@@ -124,7 +124,7 @@
             </div>
 
             <div class="when">
-              <button class="date_selector" style="border-style: none"></button>
+              <button class="date-selector" style="border-style: none"></button>
               <input
                 type="text"
                 readonly="readonly"
@@ -151,13 +151,14 @@
             </div>
           </div>
 
-          <div class="input-area" style="padding-top: 0px; padding-bottom:0px;">
+          <div class="input-area" style="padding-top: 0px; padding-bottom: 0px">
             <div class="form-check form-check-inline">
               <input
                 class="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox1"
                 value="option1"
+                checked="checked"
               />
               <label class="form-check-label" for="inlineCheckbox1">직항</label>
             </div>
@@ -174,18 +175,13 @@
             </div>
           </div>
           <div class="line">
-            <button
-              type="button"
-              class="flight-btn"
-            >
-              항공권 검색
-            </button>
+            <button type="button" class="flight-btn">항공권 검색</button>
           </div>
           <div class="notice-line">
             <div class="notice">
               <span class="mark_notice">공지</span>
-              <div class="txt"> [공지] 2024년 1월 1일 부 유류할증료 안내</div>
-              <span class="meta_date">2023-12-27</span>
+              <div class="txt">[공지] 2024년 1월 1일 부 유류할증료 안내</div>
+              <span class="meta-date">2023-12-27</span>
             </div>
             <div>
               <a href="#">모두보기 ></a>
@@ -207,7 +203,7 @@
               </div>
               <div class="air-line-title">
                 <div>김포 (GMP)</div>
-                <em class="ico_itinerary_03"></em>
+                <em class="ico-itinerary"></em>
                 <div>제주 (CJU)</div>
               </div>
               <div class="air-line-text">
@@ -225,7 +221,11 @@
           </h2>
         </div>
         <div class="promo-area">
-          <div id="carouselExampleCaptions" class="carousel slide">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            style="cursor: pointer"
+          >
             <div class="carousel-indicators">
               <button
                 type="button"
@@ -248,15 +248,14 @@
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner" style="border-radius: 10px;">
+            <div class="carousel-inner" style="border-radius: 10px">
               <div class="carousel-item active">
                 <img
                   src="/asset/image/air/banner2.png"
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
                 <img
@@ -264,8 +263,7 @@
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
                 <img
@@ -273,8 +271,7 @@
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
             </div>
             <button
@@ -388,30 +385,89 @@
           </h2>
         </div>
         <div class="item-box">
-          <div
+          <a
+            href="#"
             class="item2"
             style="background-image: url(/asset/image/air/daejeon.png)"
           >
-            <h3>대전</h3>
-          </div>
-          <div
+            <p class="tour-title">[대전] 밀가루의 도시</p>
+            <div class="item-hover">
+              <div class="top-group">
+                <h3>[대전] 밀가루의 도시</h3>
+                <p>성심당과 칼국수 식도락 투어</p>
+              </div>
+              <div class="bottom-group">
+                <div class="tags">
+                  <div class="tag">#부추빵</div>
+                  <div class="tag">#튀김소보로</div>
+                  <div class="tag">#칼국수</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="#"
             class="item2"
             style="background-image: url(/asset/image/air/namwon.png)"
           >
-            <h3>남원</h3>
-          </div>
-          <div
+            <p class="tour-title">[남원] 춘향전이 그려진</p>
+            <div class="item-hover">
+              <div class="top-group">
+                <h3>[남원] 춘향전이 그려진</h3>
+                <p>광한루에서 한복입고 인생샷</p>
+              </div>
+              <div class="bottom-group">
+                <div class="tags">
+                  <div class="tag">#광한루</div>
+                  <div class="tag">#춘향</div>
+                  <div class="tag">#전통체험</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="#"
             class="item2"
             style="background-image: url(/asset/image/air/suwon.png)"
           >
-            <h3>수원</h3>
-          </div>
-          <div
+            <p class="tour-title">[수원] 새로운 핫플</p>
+            <div class="item-hover">
+              <div class="top-group">
+                <h3>[수원] 새로운 핫플</h3>
+                <p>행궁동 소품샵 & 맛집 탐방</p>
+              </div>
+              <div class="bottom-group">
+                <div class="tags">
+                  <div class="tag">#행궁동</div>
+                  <div class="tag">#방화수류정</div>
+                  <div class="tag">#화성</div>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="#"
             class="item2"
             style="background-image: url(/asset/image/air/geongju.png)"
           >
-            <h3>경주</h3>
-          </div>
+            <p class="tour-title">[경주] 역사 덕후 추천</p>
+            <div class="item-hover">
+              <div class="top-group">
+                <h3>[경주] 역사 덕후 추천</h3>
+                <p>수학여행 필수 코스</p>
+              </div>
+              <div class="bottom-group">
+                <div class="tags">
+                  <div class="tag">#불국사</div>
+                  <div class="tag">#석굴암</div>
+                  <div class="tag">#첨성대</div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
         <div class="title-area" style="justify-content: space-between">
@@ -423,7 +479,7 @@
           </h2>
           <a href="#">더보기 ></a>
         </div>
-        <table class="table table-hover">
+        <table class="table table-hover" style="cursor: pointer">
           <thead>
             <tr></tr>
           </thead>
