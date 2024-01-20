@@ -44,14 +44,11 @@ body,div,ul,li,a,p,h1,h2,h3,h4,h5,h6{
     vertical-align: baseline;
     list-style: none;
     text-decoration: none;
-}
-
-body{
     font-family: suit;
 }
 
-h2 {
-    font-family: suit;
+h1{
+    font-family: jalnan;
 }
 
 h3{
@@ -279,4 +276,36 @@ h4{
 img{
     width: 1086px;
     height: 100%;
+}
+
+.where{
+    cursor: pointer;
+}
+
+.when{
+    cursor: pointer;
+}
+
+.who{
+    cursor: pointer;
+}
+
+.mrt_btn_swapper {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url(/asset/image/air/ico_rt.svg) no-repeat center #f1f3f5;
+    background-size: 24px !important;
+    border-radius: 2px;
+    font-size: 0;
+}
+
+.mrt_date_selector {
+    float: left;
+    width: 302px !important;
+    height: 48px;
+    margin-left: 7px !important;
+    padding-left: 44px !important;
+    background: url(/asset/image/air/ico_calendar.svg) no-repeat 12px center #fff;
+    background-size: 28px;
 }

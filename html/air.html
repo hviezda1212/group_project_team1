@@ -79,52 +79,70 @@
                 autocomplete="off"
               />
               <label
-              class="btn btn-secondary"
-              style="
-                background-color: var(--blue-600);
-                border-color: var(--blue-600);
-                font-weight: 600;
-                border-radius: var(--radius-50);
-              "
-              for="option1"
-              >다구간</label
-            >
+                class="btn btn-secondary"
+                style="
+                  background-color: var(--blue-600);
+                  border-color: var(--blue-600);
+                  font-weight: 600;
+                  border-radius: var(--radius-50);
+                "
+                for="option1"
+                >다구간</label
+              >
             </div>
 
-            <a class="icon-link icon-link-hover" href="#">
-              회원 예약내역 >
-            </a>
+            <a class="icon-link icon-link-hover" href="#"> 회원 예약내역 > </a>
             <a class="icon-link icon-link-hover" href="#">
               비회원 예약내역 >
             </a>
           </div>
 
           <div class="input-area">
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic outlined example"
-            >
-              <button type="button" class="btn btn-outline-primary">
-                Left
-              </button>
-              <button type="button" class="btn btn-outline-primary">
-                Middle
-              </button>
+            <div class="where">
+              <input type="text" readonly="readonly" />
+              <button class="mrt_btn_swapper">도착 출발 교체</button>
+              <input
+                type="text"
+                readonly="readonly"
+                placeholder="도착지가 어디인가요?"
+              />
             </div>
-            <div
-              class="btn-group"
-              role="group"
-              aria-label="Basic outlined example"
-            >
-              <button type="button" class="btn btn-outline-primary">
-                Left
-              </button>
-              <button type="button" class="btn btn-outline-primary">
-                Middle
-              </button>
+
+            <div class="when">
+              <button class="mrt_date_selector">달력</button>
+              <input
+                type="text"
+                readonly="readonly"
+                placeholder="가는날 선택"
+              />
+              <input
+                type="text"
+                readonly="readonly"
+                placeholder="오는날 선택"
+              />
+            </div>
+
+            <div class="who">
+              <a
+                href="#"
+                style="
+                  background: url(/asset/image/air/ico_arrow_lg.png) no-repeat
+                    right 10px center #fff;
+                  display: block;
+                  height: 46px;
+                  line-height: 46px;
+                  border: none;
+                  border-radius: 16px;
+                  box-sizing: border-box;
+                  cursor: pointer;
+                  background-size: 24px;
+                  font-weight: bold;
+                "
+              >
+              </a>
             </div>
           </div>
+
           <div class="input-area" style="padding-top: 0px">
             <div class="form-check form-check-inline">
               <input
@@ -167,47 +185,45 @@
           </div>
 
           <div class="latest-box-area">
-          <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body">
-                  <div class="exit-area">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      aria-label="Close"
-                    ></button>
+            <div class="row">
+              <div class="col-sm-6 mb-3 mb-sm-0">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="exit-area">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">
+                      With supporting text below as a natural lead-in to
+                      additional content.
+                    </p>
                   </div>
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
                 </div>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <div class="exit-area">
-                    <button
-                      type="button"
-                      class="btn-close"
-                      aria-label="Close"
-                    ></button>
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="exit-area">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">
+                      With supporting text below as a natural lead-in to
+                      additional content.
+                    </p>
                   </div>
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">
-                    With supporting text below as a natural lead-in to
-                    additional content.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-
         </div>
         <div class="title-area">
           <h2
@@ -420,10 +436,10 @@
           </div>
         </div>
 
-        <div class="title-area">
+        <div class="title-area" style="justify-content: space-between;">
           <h2
             class="title"
-            style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
+            style="font-size: 28px; margin-bottom: 16px; font-weight: 800;"
           >
             항공권 공지사항
           </h2>
@@ -431,8 +447,7 @@
         </div>
         <table class="table table-hover">
           <thead>
-            <tr style="border-color: red">
-            </tr>
+            <tr style="border-color: red"></tr>
           </thead>
           <tbody>
             <tr>
@@ -443,13 +458,17 @@
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>[공지] 에어서울 국내선 시스템 이전 작업에 따른 이용 제한 안내</td>
+              <td>
+                [공지] 에어서울 국내선 시스템 이전 작업에 따른 이용 제한 안내
+              </td>
               <td></td>
               <td style="text-align: right">2023-12-18</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>[공지] 최초 발권 후 24시간 이내 환불 처리 방침 변경 항공사 안내</td>
+              <td>
+                [공지] 최초 발권 후 24시간 이내 환불 처리 방침 변경 항공사 안내
+              </td>
               <td></td>
               <td style="text-align: right">2023-11-22</td>
             </tr>
