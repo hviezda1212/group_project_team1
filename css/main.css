@@ -516,6 +516,9 @@ section{
     border-radius: 20px;
 }
 
+.region-section-mobile{
+    display: none;
+}
 
 /* 모바일 버전 */
 @media screen and (max-width: 48rem) {
@@ -528,8 +531,49 @@ section{
         position: fixed !important;
     }
 
+    .title{
+        margin-top: 40px;
+        font-size: 18px;
+    }
+
     /* main-banner */
     .main-banner-box{
         height: 100%;
+    }
+
+    /* main */
+    .main-container{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .card-wrapper{
+        width: 100%;
+    }
+
+    /* region-section */
+    .region-section-pc{
+        display: none;
+    }
+    .region-section-mobile{
+        display: flex;
+    }
+
+    .region-card-container{
+        flex-flow: column;
+        padding-left: 10px;
+    }
+
+    .card-group{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .region-section .card-item {
+        width: 130px;
+        height: 80px;
+        border-radius: 20px;
     }
 }
