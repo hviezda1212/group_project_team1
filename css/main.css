@@ -125,6 +125,12 @@ section{
     background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
     background-size: cover;
     box-shadow: 10px 10px 200px 10px #292e30bd inset;
+    transition: transform 0.3s ease-in-out;
+}
+
+.region-section .card-item:hover{
+    transform: scale(1.02);
+    color: var(--blue-900);
 }
 
 .region-section .card-content{
@@ -320,6 +326,11 @@ section{
     background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
     background-size: cover;
     box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.food-section .card-item:hover{
+    color: var(--blue-900);
 }
 
 .food-section .card-cap{
@@ -503,4 +514,10 @@ section{
     width: 538px;
     margin-right: 10px;
     border-radius: 20px;
+}
+
+
+/* 모바일 버전 */
+@media screen and (max-width: 48rem) {
+
 }
