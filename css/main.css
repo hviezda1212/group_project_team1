@@ -624,15 +624,44 @@ section{
         justify-content: flex-start;
         overflow-x: auto;
     }
-    
-    .sleep-item{
-        width: 145px;
-        height: 138px;
-        margin-right: 10px;
-        border-radius: 20px;
-        overflow: hidden;
-        border: 1px solid black;
+
+    .sleep-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
     }
 
+    .sleep-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .sleep-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+    
+    .sleep-img{
+        width: 145px;
+        height: 138px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+    }
+
+    .sleep-section .cap{
+        padding: 10px 7px 6px 7px;
+        font-size: 11px;
+        color: var(--blue-900);
+    }
+
+    .sleep-section h3{
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+
+    .sleep-section p{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 600;
+    }
 
 }
