@@ -179,12 +179,19 @@
         color: var(--blue-900);
         background-color: var(--mint-900);
       }
+
+      .mobile-header {
+        display: none;
+      }
       /* 모바일 버전 */
       @media screen and (max-width: 48rem) {
-        /* header {
-          display: block;
-          position: relative;
-        } */
+        .pc-header {
+          display: none;
+        }
+        .mobile-header {
+          display: flex;
+          background-color: pink;
+        }
 
         .header-area {
           width: 100%;
@@ -269,7 +276,66 @@
     </header>
 
     <!-- mobile header -->
-    <header class="mobile-header"></header>
+    <header class="mobile-header">
+      <!-- 헤더 -->
+      <div class="header-area">
+        <a href="./main.html" class="header-logo">
+          <i class="logo-icon fa-solid fa-mountain-sun"></i>
+          <h1 class="logo-text">누나투어</h1>
+        </a>
+
+        <div class="header-search">
+          <input
+            type="search"
+            class="header-search-input"
+            placeholder="지역이나 상품으로 검색해보세요"
+          />
+          <i class="header-search-icon fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <!-- 네비게이션 바 -->
+      <nav class="nav-bar navbar navbar-expand-lg navbar-light">
+        <div class="nav-container container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- nav 메뉴 -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" aria-current="page" href="#"
+                  >숙소</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="#">지역맛집</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="#">투어·티켓</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-menu-link nav-link" href="#">항공편</a>
+              </li>
+            </ul>
+
+            <!-- 로그인, 회원가입 버튼 -->
+            <div class="sign-btn-container">
+              <a class="sign-btn login-btn">로그인</a>
+              <a class="sign-btn join-btn">회원가입</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
 
     <!-- bootstrap -->
     <script
