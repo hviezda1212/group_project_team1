@@ -179,10 +179,35 @@
         color: var(--blue-900);
         background-color: var(--mint-900);
       }
+      /* 모바일 버전 */
+      @media screen and (max-width: 48rem) {
+        /* header {
+          display: block;
+          position: relative;
+        } */
+
+        .header-area {
+          width: 100%;
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          margin-top: 20px;
+        }
+
+        .nav-bar {
+          width: 100%;
+        }
+
+        .nav-container {
+          width: 100vw;
+          display: flex;
+          justify-content: flex-end !important;
+        }
+      }
     </style>
   </head>
   <body>
-    <header>
+    <header class="pc-header">
       <!-- 헤더 -->
       <div class="header-area">
         <a href="./main.html" class="header-logo">
@@ -242,6 +267,9 @@
         </div>
       </nav>
     </header>
+
+    <!-- mobile header -->
+    <header class="mobile-header"></header>
 
     <!-- bootstrap -->
     <script
