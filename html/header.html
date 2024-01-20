@@ -190,7 +190,6 @@
         }
         .mobile-header {
           display: flex;
-          background-color: pink;
         }
 
         .header-area {
@@ -199,13 +198,13 @@
           justify-content: space-between;
           align-items: center;
           margin-top: 20px;
-          border: 2px solid red;
+          /* border: 2px solid red; */
         }
 
         .header-logo {
           display: flex;
           align-items: center;
-          margin-right: 0px;
+          margin-right: 142px;
           font-family: jalnan;
           font-size: 20px;
           font-weight: 400;
@@ -219,15 +218,30 @@
 
         .logo-text {
           font-size: 20px;
+          color: var(--blue-800);
+        }
+
+        .left-area {
+          display: flex;
+          align-items: center;
+        }
+
+        .header-search-icon {
+          position: inherit;
         }
 
         .nav-bar {
+          width: 100%;
+          position: fixed;
+          top: 0;
+          padding: 8px 10px;
           background-color: var(--white);
+          box-shadow: var(--shadow);
         }
 
         .nav-container {
-          display: flex;
-          justify-content: flex-end !important;
+          /* display: flex;
+          justify-content: flex-end !important; */
         }
       }
     </style>
@@ -298,15 +312,25 @@
     <header class="mobile-header">
       <!-- header area start-->
       <div class="header-area">
-        <!-- <a href="./main.html" class="header-logo">
-          <i class="logo-icon fa-solid fa-mountain-sun"></i>
-          <h1 class="logo-text">누나투어</h1>
-        </a> -->
-
         <!-- 네비게이션 바 -->
         <nav class="nav-bar navbar navbar-expand-lg navbar-light">
           <div class="nav-container container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <div class="left-area">
+              <a class="header-logo navbar-brand" href="main.html">
+                <i class="logo-icon fa-solid fa-mountain-sun"></i>
+                <h1 class="logo-text">누나투어</h1>
+              </a>
+              <!-- <div class="header-search">
+                <input
+                  type="search"
+                  class="header-search-input"
+                  placeholder="지역이나 상품으로 검색해보세요"
+                />
+                <i class="header-search-icon fa-solid fa-magnifying-glass"></i>
+              </div> -->
+              <i class="header-search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+
             <button
               class="navbar-toggler"
               type="button"
@@ -339,7 +363,9 @@
                   <a class="nav-menu-link nav-link" href="#">로그인</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-menu-link nav-link" href="#">회원가입</a>
+                  <a class="nav-menu-link nav-link join-btn" href="#"
+                    >회원가입</a
+                  >
                 </li>
               </ul>
               <!-- 로그인, 회원가입 버튼 -->
@@ -353,14 +379,14 @@
       </div>
       <!-- header area end -->
 
-      <div class="header-search">
+      <!-- <div class="header-search">
         <input
           type="search"
           class="header-search-input"
           placeholder="지역이나 상품으로 검색해보세요"
         />
         <i class="header-search-icon fa-solid fa-magnifying-glass"></i>
-      </div>
+      </div> -->
     </header>
 
     <!-- bootstrap -->
