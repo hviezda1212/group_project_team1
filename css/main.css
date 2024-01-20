@@ -544,7 +544,7 @@ section{
 
     .title{
         margin-top: 40px;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
         font-size: 18px;
     }
 
@@ -568,6 +568,7 @@ section{
         flex-flow: column;
         padding-left: 10px;
         margin-bottom: 40px;
+        overflow: hidden;
     }
 
     .card-group{
@@ -615,6 +616,22 @@ section{
     /* sleep section */
     .sleep-card-container{
         display: flex;
+    }
+
+    .sleep-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    
+    .sleep-item{
+        width: 145px;
+        height: 138px;
+        margin-right: 10px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid black;
     }
 
 
