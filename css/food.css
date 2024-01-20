@@ -423,3 +423,36 @@ body {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+.recommend{
+    margin-top: var(--margin-107);
+}
+
+.re-card h5 {
+    font-size: 3rem;
+    color: var(--mint-900);
+    font-family: "Jalnan";
+}
+
+.re-card i {
+    color: red;
+    font-size: 5rem;
+    margin-right: 15px;
+}
+
+.re-card p {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.cafe {
+    font-style: oblique;
+    font-size: 1.8rem;
+    color: rgb(103, 53, 53);
+}
+
+.top3 {
+    font-size: 2.5rem;
+    color: yellow;
+}
