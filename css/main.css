@@ -527,4 +527,9 @@ section{
         /* width: 100vw; */
         position: fixed !important;
     }
+
+    /* main-banner */
+    .main-banner-box{
+        height: 100%;
+    }
 }
