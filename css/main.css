@@ -516,16 +516,16 @@ section{
     border-radius: 20px;
 }
 
-.region-section-mobile, sleep-section-mobile{
+.region-section-mobile, .sleep-section-mobile, .food-section-mobile, .tour-section-mobile{
     display: none;
 }
 
 /* 모바일 버전 */
 @media screen and (max-width: 48rem) {
-    .region-section-pc, .sleep-section-pc{
+    .region-section-pc, .sleep-section-pc, .food-section-pc, .tour-section-pc{
         display: none;
     }
-    .region-section-mobile, .sleep-section-mobile{
+    .region-section-mobile, .sleep-section-mobile, food-section-mobile, .tour-section-mobile{
         display: flex;
     } 
 
@@ -614,15 +614,21 @@ section{
     }
 
     /* sleep section */
-    .sleep-card-container{
+    .sleep-card-container, .tour-card-container{
         display: flex;
     }
 
-    .sleep-items{
+    .sleep-items, .tour-items{
         width: 100%;
         display: flex;
         justify-content: flex-start;
+        padding-bottom: 0;
         overflow-x: auto;
+    }
+
+    .tour-img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
     .sleep-items::-webkit-scrollbar{
@@ -701,6 +707,107 @@ section{
 
     .check-btn img{
         width: 30px;
+    }
+
+    /* food section  */
+
+    .food-card-container{
+        display: flex;
+    }
+
+    .food-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .food-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .food-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .food-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+    
+    .food-img{
+        width: 190px;
+        height: 138px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+    }
+
+    .food-section .cap{
+        padding: 10px 7px 6px 7px;
+        font-size: 11px;
+        color: var(--blue-900);
+    }
+
+    .food-section h3{
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .food-section p{
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .michelin-icons{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .star-icon{
+        width: 16px;
+        margin-right: 4px;
+    }
+
+    /* tour section */
+    .tour-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+
+    .tour-img{
+        width: 324px;
+        height: 181px;
+    }
+
+    .tour-cap{
+        padding: 15px;
+        color: var(--blue-900);
+    }
+
+    .tour-cap p{
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .tour-cap h3{
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .second-group{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .second-group .tags{
+        display: flex;
     }
 
 }
