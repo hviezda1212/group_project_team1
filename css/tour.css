@@ -11,9 +11,9 @@
           
           /* border-radius */
           --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
-          --radius-50: 50px /* 완전히 둥글게 */	
+          --radius-50: 50px /* 완전히 둥글게 */   
 
-       /* margin */	
+       /* margin */   
           --margin-16: 16px /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
           --margin-107: 107px /* 섹션과 섹션사이에 넣어주세요 */
 
@@ -259,7 +259,7 @@ section{
     margin: 0 24px 0 0 ;
 }
 .card:nth-child(5){
-    margin:0 auto;
+    margin-right:0;
 }
 .card-img{
     width: 100%;
@@ -288,7 +288,7 @@ section{
 }
 .card-title{
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 .card-sub-title{
@@ -314,10 +314,70 @@ section{
     cursor: pointer;
     width: 120px;
 }
+@media (max-width: 767px){
+   /*모바일*/
+    .main-container{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 500px;
+    }
+    main{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+    }
+    .content1,.content2,.content3,.content4,.content5{
+        width: 400px;
+        
+    }
+    .content1{
+        height: 600px !important;;
+    }
+  .citys{
+   display: none;
+  }
+  .city{
+    margin-bottom:20px;
+  }
+    .search, .search-icon{
+    display: none;  
+}
+.container{
+    position: absolute;
+    top:45%;
+    width: 100% !important;
+}
+.item{
+  
+}
+.item .name{
+    font-size: 20px;
 
+}
+.card{
+    margin:0 auto !important;
+}
+.position{
+   width:100%;
+   margin: 54px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    // 테블릿 세로
+   
+}
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    // 테블릿 가로
+}
 
-
+@media (min-width: 1200px) {
+    // 데스크탑 일반
+}
 
 
 
