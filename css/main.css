@@ -819,8 +819,17 @@ section{
     }
 
     .flight-img{
-        width: 340px;
+        width: 300px;
         border-radius: 20px;
     }
+
+    .flight-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .flight-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
 
 }
