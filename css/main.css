@@ -664,4 +664,43 @@ section{
         font-weight: 600;
     }
 
+    /* hot-deal section */
+    .hot-deal-box{
+        flex-flow: column;
+    }
+
+    .hot-deal-cap{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .time-area{
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .cap-area{
+       padding: 10px 0 0 37px;
+    }
+
+    .hot-deal-section .sub-cap{
+        font-size: 16px;
+    }
+
+    .hot-deal-section .price-cap{
+        margin-top: 35px;
+        font-size: 25px;
+    }
+
+    .cap-area .check-btn{
+        font-size: 13px;
+    }
+
+    .check-btn img{
+        width: 30px;
+    }
+
 }
