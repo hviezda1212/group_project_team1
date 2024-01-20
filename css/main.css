@@ -816,14 +816,11 @@ section{
     /* flight section */
     .flight-items{
         width: 100%;
-        height: 100px;
     }
 
-    .flight-item{
-        width: 100%;
-        height: 100%;
-        background-image: url(/asset/image/main/event-img1.jpeg);
-        background-size: cover;
+    .flight-img{
+        width: 340px;
+        border-radius: 20px;
     }
 
 }
