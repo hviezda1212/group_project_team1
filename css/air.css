@@ -191,6 +191,7 @@ h4{
     flex-flow: column;
     justify-content: flex-end;
     background-size: cover;
+    box-shadow: 0px -70px 50px 0 #00000093 inset;
 }
 
 .item2:nth-child(4) {
@@ -218,15 +219,16 @@ h4{
 }
 
 .caption{
-    margin-top: 6px;
     color: #626f75;
     font-size: 14px;
+    margin-bottom : 0px;
 }
 
 .price{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    margin-bottom:5px;
 }
 
 .tags{
@@ -279,14 +281,49 @@ img{
 }
 
 .where{
+    position: relative;
+    width: 450px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
     cursor: pointer;
 }
 
 .when{
+    position: relative;
+    width: 310px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    background-size: cover;
     cursor: pointer;
 }
 
 .who{
+    position: relative;
+    width: 220px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    background-size: cover;
     cursor: pointer;
 }
 
@@ -300,12 +337,26 @@ img{
     font-size: 0;
 }
 
-.mrt_date_selector {
+.date_selector {
     float: left;
-    width: 302px !important;
     height: 48px;
-    margin-left: 7px !important;
     padding-left: 44px !important;
     background: url(/asset/image/air/ico_calendar.svg) no-repeat 12px center #fff;
     background-size: 28px;
+    filter: opacity(0.6);
+}
+
+input{
+    border-color:#fff;
+    border-style:none;
+}
+
+.people {
+    display: inline-block;
+    padding-left: 44px;
+    font-size: 15px;
+    color: #343a40;
+    background-image: url(/asset/image/air/ico_user.svg) no-repeat 12px center #fff;
+    background-size: 28px;
+    filter: opacity(0.6);
 }

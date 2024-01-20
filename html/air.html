@@ -99,47 +99,48 @@
 
           <div class="input-area">
             <div class="where">
-              <input type="text" readonly="readonly" />
-              <button class="mrt_btn_swapper">도착 출발 교체</button>
+              <input
+                type="text"
+                readonly="readonly"
+                placeholder="김포 (GMP)"
+                style="font-weight: 800; width:190px; padding-left:16px;"
+              />
+              <button class="mrt_btn_swapper" style="border-style: none">
+                도착 출발 교체
+              </button>
               <input
                 type="text"
                 readonly="readonly"
                 placeholder="도착지가 어디인가요?"
+                style="width:210px; padding-left:20px;"
               />
             </div>
 
             <div class="when">
-              <button class="mrt_date_selector">달력</button>
+              <button class="date_selector" style="border-style: none"></button>
               <input
                 type="text"
                 readonly="readonly"
+                style="width: 100px"
                 placeholder="가는날 선택"
               />
+              <span class="hyphen" style="margin-right: 20px">-</span>
               <input
                 type="text"
                 readonly="readonly"
+                style="width: 100px"
                 placeholder="오는날 선택"
               />
             </div>
 
             <div class="who">
-              <a
-                href="#"
-                style="
-                  background: url(/asset/image/air/ico_arrow_lg.png) no-repeat
-                    right 10px center #fff;
-                  display: block;
-                  height: 46px;
-                  line-height: 46px;
-                  border: none;
-                  border-radius: 16px;
-                  box-sizing: border-box;
-                  cursor: pointer;
-                  background-size: 24px;
-                  font-weight: bold;
-                "
-              >
-              </a>
+              <button class="people" style="border-style: none"></button>
+              <input
+                type="text"
+                readonly="readonly"
+                placeholder="승객 1명, 일반석"
+                style="font-weight: 800; width:210px; padding-left:20px;"
+              />
             </div>
           </div>
 
@@ -331,7 +332,7 @@
             class="title"
             style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
           >
-            검색 상위 지역 TOP4
+            검색 상위 공항 TOP4
           </h2>
         </div>
         <div class="item-box">
@@ -341,10 +342,10 @@
           >
             <div class="item-cap">
               <div class="title-cap-box">
-                <h3>제주</h3>
-                <p class="caption">제주에서 나만의 겨울을 채우다</p>
+                <h3 style="margin-bottom: 3px">제주</h3>
+                <p class="caption">김포 -> 제주</p>
               </div>
-              <h4 class="price">29,500원</h4>
+              <h5 class="price">45,900원~</h5>
               <div class="tags">
                 <p class="tag">#한라산</p>
                 <p class="tag">#동백꽃</p>
@@ -353,17 +354,17 @@
           </div>
           <div
             class="item"
-            style="background-image: url(/asset/image/air/jeonju.png)"
+            style="background-image: url(/asset/image/air/gimpo.png)"
           >
             <div class="item-cap">
               <div class="title-cap-box">
-                <h3>전주</h3>
-                <p class="caption">가장 한국적인 도시, 전주</p>
+                <h3 style="margin-bottom: 3px">김포</h3>
+                <p class="caption">제주 -> 김포</p>
               </div>
-              <h4 class="price">29,500원</h4>
+              <h5 class="price">50,000원~</h5>
               <div class="tags">
-                <p class="tag">#한옥마을</p>
-                <p class="tag">#비빔밥</p>
+                <p class="tag">#조각공원</p>
+                <p class="tag">#장릉</p>
               </div>
             </div>
           </div>
@@ -373,29 +374,29 @@
           >
             <div class="item-cap">
               <div class="title-cap-box">
-                <h3>부산</h3>
-                <p class="caption"></p>
+                <h3 style="margin-bottom: 3px">부산</h3>
+                <p class="caption">김포 -> 부산</p>
               </div>
-              <h4 class="price">29,500원</h4>
+              <h5 class="price">34,900원~</h5>
               <div class="tags">
                 <p class="tag">#광안리</p>
-                <p class="tag">#맛집</p>
+                <p class="tag">#해운대</p>
               </div>
             </div>
           </div>
           <div
             class="item"
-            style="background-image: url(/asset/image/air/suwon.png)"
+            style="background-image: url(/asset/image/air/yusu.png)"
           >
             <div class="item-cap">
               <div class="title-cap-box">
-                <h3>수원</h3>
-                <p class="caption"></p>
+                <h3 style="margin-bottom: 3px">여수</h3>
+                <p class="caption">김포 -> 여수</p>
               </div>
-              <h4 class="price">29,500원</h4>
+              <h5 class="price">64,000원~</h5>
               <div class="tags">
-                <p class="tag">#행궁</p>
-                <p class="tag">#화성</p>
+                <p class="tag">#게장</p>
+                <p class="tag">#엑스포</p>
               </div>
             </div>
           </div>
@@ -424,9 +425,9 @@
           </div>
           <div
             class="item2"
-            style="background-image: url(/asset/image/air/gapeong.png)"
+            style="background-image: url(/asset/image/air/suwon.png)"
           >
-            <h3>가평</h3>
+            <h3>수원</h3>
           </div>
           <div
             class="item2"
@@ -436,10 +437,10 @@
           </div>
         </div>
 
-        <div class="title-area" style="justify-content: space-between;">
+        <div class="title-area" style="justify-content: space-between">
           <h2
             class="title"
-            style="font-size: 28px; margin-bottom: 16px; font-weight: 800;"
+            style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
           >
             항공권 공지사항
           </h2>
