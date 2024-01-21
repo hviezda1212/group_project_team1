@@ -115,6 +115,7 @@ small:hover {
   background-repeat: no-repeat;
   background-color: #f5f5f5;
   margin-bottom: 107px;
+  border-radius:10px;
 }
 
 .button-area {
@@ -277,13 +278,28 @@ small:hover {
   margin-bottom: 107px;
 }
 
+.card-wrapper2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  margin-bottom: 107px;
+}
+
+.card-group{
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+}
+
 .item {
   position: relative;
   width: 251.5px;
   height: 333px;
   display: flex;
   align-items: center;
-  border: 1px solid #c4ced3;
+  border: 0.5px solid rgb(199, 197, 197);
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   overflow: hidden;
@@ -291,6 +307,7 @@ small:hover {
   justify-content: flex-end;
   background-size: cover;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .item:nth-child(4) {
@@ -298,7 +315,8 @@ small:hover {
 }
 
 .item:hover {
-  box-shadow: 0 2px 8px #38556450;
+  color: var(--blue-900);
+  box-shadow: var(--shadow);
 }
 
 .item2 {
@@ -307,7 +325,6 @@ small:hover {
   height: 333px;
   display: flex;
   align-items: center;
-  border: 1px solid #c4ced3;
   background-color: var(--white);
   border-radius: 10px;
   overflow: hidden;
@@ -352,6 +369,10 @@ small:hover {
   margin: 0.2em;
 }
 
+.tag:hover{
+  color: #d2e69c;
+}
+
 .item-cap {
   position: absolute;
   width: 100%;
@@ -378,6 +399,8 @@ small:hover {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 5px;
+  color: #4b778d;
+  font-weight:700;
 }
 
 .tags {
@@ -547,7 +570,6 @@ small:hover {
   }
 
   .title {
-    margin-top: 40px;
     margin-bottom: 22px;
     font-size: 18px;
   }
@@ -606,29 +628,26 @@ small:hover {
 
   .item {
     position: relative;
-    width: 100.5px;
-    height: 333px;
     display: flex;
     align-items: center;
-    border: 1px solid #c4ced3;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     flex-flow: column;
     justify-content: flex-end;
     background-size: cover;
     cursor: pointer;
+    width: 190px;
+    height: 250px;
   }
 
   .item2 {
     position: relative;
-    width: 251.5px;
-    height: 333px;
+    width: 150px;
+    height: 150px;
     display: flex;
     align-items: center;
-    border: 1px solid #c4ced3;
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 50px;
     overflow: hidden;
     flex-flow: column;
     justify-content: flex-end;
@@ -642,8 +661,8 @@ small:hover {
   }
 
   .main-search-area {
-    margin-bottom: 40px;
     height: 540px;
+    margin-bottom: 40px;
   }
 
   .latest-card {
@@ -661,7 +680,13 @@ small:hover {
   }
 
   .card-wrapper {
+    margin-bottom: 30px;
+    justify-content: flex-start;
+  }
+
+  .card-wrapper2 {
     margin-bottom: 40px;
+    flex-flow:column;
   }
 
   .carousel-indicators {
@@ -670,5 +695,31 @@ small:hover {
 
   .carousel-button {
     background-color: #626f75 !important;
+  }
+
+  .card-group {
+    width: 100%;
+    margin-bottom:10px;
+  }
+
+  .tour-title {
+    margin-bottom: 2rem;
+  }
+
+  .item-hover{
+    padding-top:33px !important;
+  }
+
+  .item-hover h3{
+    font-size:0px;
+  }
+
+  .item-hover p{
+    font-size:16px;
+    padding-bottom:100px;
+  }
+
+  .tag {
+    opacity: 0;
   }
 }
