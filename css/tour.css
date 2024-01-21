@@ -101,7 +101,12 @@ section{
     position: relative;
     margin: 0 24px 0 0;
     background-size: contain;
+    transition: all 0.3s ease;
 
+}
+.city:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 .city p{
     bottom: 0;
