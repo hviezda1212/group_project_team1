@@ -44,7 +44,6 @@ body {
     min-width: 200px;
 }
 
-
 .search-back {
     border-radius: 10px;
     overflow: hidden;
@@ -148,6 +147,7 @@ body {
 }
 
 .scroll-container {
+    width: 100%;
     overflow: hidden;
     padding: 0 20px;
 }
@@ -158,7 +158,7 @@ body {
     }
 
     to {
-        transform: translateX(-200%);
+        transform: translateX(-250%);
     }
 }
 
@@ -246,10 +246,6 @@ body {
     border-radius: var(--radius-10);
 }
 
-.search-container{
-    position: relative
-}
-
 .location-btn{
     height: 100px;
     width: 100px;
@@ -261,7 +257,7 @@ body {
     margin: auto;
     left: 0;
     right: 0;
-    top: 385px;
+    top: 0;
     bottom: 0;
     border-radius: 50%;
     display: grid;
@@ -294,7 +290,6 @@ body {
         opacity: 0;
     }
 }
-
 
 
 .local-food-wrap {
@@ -359,6 +354,8 @@ body {
 .city-card-group .city-card {
     border-radius: 10px;
     overflow: hidden;
+    min-width: 200px;
+    height: 400px;
 }
 
 .city-card-group {
@@ -377,6 +374,10 @@ body {
     overflow: hidden;
 }
 
+.city-card img {
+    height: 100%;
+    object-fit: cover;
+}
 
 .city-hover {
     position: absolute;
@@ -394,6 +395,22 @@ body {
     margin-top: 30px;
     color: var(--white);
     font-weight: bold;
+}
+
+.city-btn {
+    border: 3px solid var(--white);
+    background-color: var(--blue-700);
+    padding: 2px 10px;
+    border-radius: var(--radius-10);
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.city-btn:hover {
+    background-color: var(--white);
+    border-color: var(--mint-900);
+    color: var(--mint-900);
 }
 
 .over {
@@ -450,6 +467,9 @@ body {
     color: yellow;
 }
 
+.search-container{
+    position: relative
+}
 
 @media screen and (max-width: 48rem) {
     .header-area, h1{
@@ -459,4 +479,23 @@ body {
         /* width: 100vw; */
         position: fixed !important;
     }
-  }
+
+    .re-card h5 {
+        font-size: 2rem;
+        color: var(--mint-900);
+        font-family: "Jalnan";
+    }
+
+    .re-card i {
+        color: red;
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
+    .re-card p {
+        font-size: 1rem;
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+
