@@ -43,6 +43,7 @@ body {
     font-family: suit;
 }
 
+
 .search-back {
     border-radius: 10px;
     overflow: hidden;
@@ -82,7 +83,7 @@ body {
     position:relative;
     top: 150px;
     margin: 0 auto;
-    z-index: 999;
+    z-index: 70;
 }
 
 .input-container>i {
@@ -244,6 +245,10 @@ body {
     border-radius: var(--radius-10);
 }
 
+.search-container{
+    position: relative
+}
+
 .location-btn{
     height: 100px;
     width: 100px;
@@ -255,7 +260,7 @@ body {
     margin: auto;
     left: 0;
     right: 0;
-    top: 0;
+    top: 385px;
     bottom: 0;
     border-radius: 50%;
     display: grid;
@@ -288,6 +293,7 @@ body {
         opacity: 0;
     }
 }
+
 
 
 .local-food-wrap {
@@ -400,3 +406,56 @@ body {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+.recommend{
+    margin-top: var(--margin-107);
+}
+
+.re-card {
+    border: none;
+}
+
+.re-card img {
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
+.re-card h5 {
+    font-size: 3rem;
+    color: var(--mint-900);
+    font-family: "Jalnan";
+}
+
+.re-card i {
+    color: red;
+    font-size: 5rem;
+    margin-right: 15px;
+}
+
+.re-card p {
+    font-size: 2rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.cafe {
+    font-style: oblique;
+    font-size: 1.8rem;
+    color: rgb(103, 53, 53);
+}
+
+.top3 {
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+
+@media screen and (max-width: 48rem) {
+    .header-area, h1{
+        margin: 0 !important;
+    }
+    .nav-bar {
+        /* width: 100vw; */
+        position: fixed !important;
+    }
+  }
