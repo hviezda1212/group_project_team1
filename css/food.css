@@ -479,4 +479,23 @@ body {
         /* width: 100vw; */
         position: fixed !important;
     }
-  }
+
+    .re-card h5 {
+        font-size: 2rem;
+        color: var(--mint-900);
+        font-family: "Jalnan";
+    }
+
+    .re-card i {
+        color: red;
+        font-size: 2rem;
+        margin-right: 15px;
+    }
+
+    .re-card p {
+        font-size: 1rem;
+        color: var(--white);
+        font-weight: bold;
+    }
+}
+
