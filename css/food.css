@@ -41,6 +41,7 @@
 
 body {
     font-family: suit;
+    min-width: 200px;
 }
 
 
