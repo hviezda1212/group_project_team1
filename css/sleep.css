@@ -106,8 +106,8 @@ body{
     position: relative;
     height: 100%;
     color: #e9ecef;
-    font-size: 54px;
-    margin-top: -14px;
+    font-size: 70px;
+    margin-top: -17px;
     margin-bottom: 0;
     font-weight: 30;
 }
@@ -194,8 +194,8 @@ body{
 
 /* ad-start */
 .content-ad {
-    display: flex;
-    justify-content: center;
+    width: 1086px;
+    margin: 0 auto;
 }
 
 .ad {
@@ -236,6 +236,11 @@ body{
 /* ad-end */
 
 /* top-start */
+.content-top {
+    width: 1086px;
+    margin: 0 auto;
+}
+
 .margin-107 {
     display: flex;
     justify-content: center;
@@ -380,6 +385,11 @@ body{
 /* top-end */
 
 /* goto-start */
+.content-goto {
+    width: 1086px;
+    margin: 0 auto;
+}
+
 .goto {
     width: 1086px;
     margin: 0 auto;
