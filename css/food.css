@@ -499,3 +499,22 @@ body {
     }
 }
 
+@media screen and (max-width: 400) {
+    .re-card h5 {
+        font-size: 1.4rem;
+        color: var(--mint-900);
+        font-family: "Jalnan";
+    }
+
+    .re-card i {
+        color: red;
+        font-size: 1.4rem;
+        margin-right: 15px;
+    }
+
+    .re-card p {
+        font-size: 0.9rem;
+        color: var(--white);
+        font-weight: bold;
+    }
+}
