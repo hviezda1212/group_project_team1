@@ -29,15 +29,13 @@
 
       body {
         font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
-      }
-
-      body {
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
       }
+
       a {
         color: #4b778d;
         text-decoration: none;
@@ -47,8 +45,8 @@
         position: absolute;
         left: 0;
         top: 0;
-        min-width: 100%;
-        min-height: 100%;
+        width: 100%;
+        height: 100%;
         background-repeat: no-repeat;
         object-fit: cover;
         background-position: center;
@@ -64,8 +62,6 @@
         backdrop-filter: blur(20px);
         padding: 40px;
         width: 500px;
-        top: -150px;
-        margin-top: 200px;
         box-shadow: 1px 1px 10px black;
         border-radius: 10px;
       }
@@ -79,8 +75,9 @@
       .sigin {
         overflow: hidden;
         transition: max-height 2s ease;
-        width: 400px;
-        top: -150px;
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
       }
 
       .sigin .open {
@@ -124,7 +121,7 @@
 
       .logo-box span {
         font-family: jalnan;
-        font-size: 3rem;
+        font-size: 2.6rem;
         color: #4b778d;
         margin-right: 3px;
       }
@@ -146,12 +143,41 @@
       .btn-sign:hover {
         background-color: #4b778d;
       }
+
+      @media (max-width: 700px) {
+        .main{
+          width: 100%;
+        }
+
+        .sigin {
+          width: 90%; /* 변경된 부분 */
+          max-width: 300px; /* 변경된 부분 */
+        }
+
+        i,
+        span {
+          text-align: center; /* 변경된 부분 */
+          margin: 0 auto; /* 변경된 부분 */
+          display: block;
+          width: 100%;
+        }
+
+        .logo-box {
+          flex-flow: column;
+        }
+      }
+
+      @media (max-width: 400px) {
+        .main {
+          width: 320px; /* 변경된 부분 */
+        }
+      }
     </style>
   </head>
   <body>
     <video src="/asset/video/bg.mp4" autoplay loop muted></video>
     <main>
-      <div class="container main">
+      <div class="main">
         <div class="sigin">
           <form id="loginForm">
             <div class="login-header">
