@@ -596,18 +596,18 @@ section{
     border-radius: 20px;
 }
 
-.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
+.main-slide-mobile,.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
 .tour-section-mobile, .flight-section-mobile{
     display: none;
 }
 
 /* 모바일 버전 */
 @media screen and (max-width: 48rem) {
-    .region-section-pc, .sleep-section-pc, .food-section-pc, 
-    .tour-section-pc, .flight-section-pc{
+    .main-slide-pc,.region-section-pc, .sleep-section-pc, .food-section-pc, 
+    .tour-section-pc, .flight-section-pc {
         display: none;
     }
-    .region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
+    .main-slide-mobile,.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
     .tour-section-mobile, .flight-section-mobile{
         display: flex;
     } 
