@@ -29,6 +29,10 @@
         width: 100% !important;
     }
 
+    .content-event2 {
+        justify-content: flex-start !important;
+    }
+
     .search-chk {
         width: 145px !important;
     }
@@ -44,7 +48,14 @@
 
     .top2-text-main {
         max-width: 1086px !important;
+    }
+
+    .top2 {
         display: contents !important;
+    }
+
+    .top2-main {
+        margin-bottom: 10px !important;
     }
 
     .top2-text-content1-title {
@@ -69,6 +80,14 @@
 
     .goto-space {
         display: block !important;
+    }
+
+    .goto-group {
+        justify-content: center !important;
+    }
+
+    .goto-group-between {
+        margin-right: 60px !important;
     }
     
 }
@@ -515,6 +534,15 @@ body{
     font-size: 20px;
     font-weight: 900;
 }
+
+.goto-group {
+    display: flex;
+}
+
+.goto-group-between {
+    margin-right: 27px;
+}
+
 /* goto-end */
 
 /* ad2-start */
