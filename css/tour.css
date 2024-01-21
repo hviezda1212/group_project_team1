@@ -11,9 +11,9 @@
           
           /* border-radius */
           --radius-10: 10px; /* 카드 요소에 넣어주세요. */ 
-          --radius-50: 50px /* 완전히 둥글게 */	
+          --radius-50: 50px /* 완전히 둥글게 */   
 
-       /* margin */	
+       /* margin */   
           --margin-16: 16px /* 섹션 제목과 섹션 요소 사이에 넣어주세요 */
           --margin-107: 107px /* 섹션과 섹션사이에 넣어주세요 */
 
@@ -51,7 +51,9 @@ main{
 section{
     width: 100%;
 }
-
+.title-container{
+    width: 100%;
+}
 .title { /* 섹션 제목 */
     margin-top: var(--margin-107);
     margin-bottom: 16px;
@@ -60,11 +62,19 @@ section{
     font-weight: 800;
 }
 .position{
-    width: 100%;;
-    /*position: relative;
-    top: -51%;
-    left: 4%;
-*/}
+    width: 100%;
+
+}
+.where{
+    padding:20px;
+    margin: 15px;
+    font-weight: 800;
+    color:ghostwhite;
+}
+.more{
+    font-size: small;
+    float: right;
+}
 .content1,.content2,.content3,.content4,.content5{
     width: 100%;
     display: flex;
@@ -85,50 +95,30 @@ section{
     transform: translateX(-50%);
   }
 .city{
-    background: url(../asset/image/tour/seoul-forest.bmp);
     width: 200px;
     height: 150px;
     border: none;
     border-radius: 30px;
     position: relative;
     margin: 0 24px 0 0;
+    background-size: contain;
+    transition: all 0.3s ease;
+
+}
+.city:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 .city p{
     bottom: 0;
     font-size: 25px;
     font-weight: bold;
-    color: #273e49;
+    color: white;
     position: absolute;
     margin: 15px;
 }
 
-/*검색*/
-.search-box {
-    position: relative;
-    text-align: center; 
-    width: 100%;
-  }
-  
-  .search {
-    top: -50px;
-    width: 500px;
-    padding: 14px 43px 14px 20px;
-    background-color: #f5f5f5;
-    border-radius: 50px;
-    box-sizing: border-box;
-    border: none;
-    margin: 30px auto;
-    display: block;
-    position: absolute;
-    /* z-index: 333; */
-    left: 50%;
-    transform: translateX(-50%);
-  } 
- .search-icon{
-    position: absolute;
-    right: 29%;
-    cursor: pointer;
- }
+
 /*이벤트 베너*/
 .content2{
     overflow: hidden;
@@ -190,7 +180,7 @@ section{
     width: 300px;
     text-align: left;
     padding: 0;
-    color: #eee;
+    color:white;
     transform: translate(0, -50%);
     display: none;
 
@@ -200,7 +190,7 @@ section{
     z-index: 11111;
 }
 .item .name{
-    font-size: 40px;
+    font-size: 31px;
     font-weight: bold;
     opacity: 0;
     animation: showcontent 1s ease-in-out 1 forwards; 
@@ -258,7 +248,7 @@ section{
     margin: 0 24px 0 0 ;
 }
 .card:nth-child(5){
-    margin:0 auto;
+    margin-right:0;
 }
 .card-img{
     width: 100%;
@@ -287,7 +277,7 @@ section{
 }
 .card-title{
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
 }
 .card-sub-title{
@@ -313,10 +303,70 @@ section{
     cursor: pointer;
     width: 120px;
 }
+@media (max-width: 767px){
+   /*모바일*/
+    .main-container{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        width: 500px;
+    }
+    main{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+    }
+    .content1,.content2,.content3,.content4,.content5{
+        width: 400px;
+        
+    }
+    .content1{
+        height: 600px !important;;
+    }
+  .citys{
+   display: none;
+  }
+  .city{
+    margin-bottom:20px;
+  }
 
+.container{
+    position: absolute;
+    top:45%;
+    width: 100% !important;
+}
+.item{
+  
+}
+.item .name{
+    font-size: 20px;
 
+}
+.card{
+    margin: auto !important;
+    padding: 15px;
+    border: none!important;
+}
+.position{
+   width:100%;
+   margin: 54px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    // 테블릿 세로
+   
+}
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    // 테블릿 가로
+}
 
+@media (min-width: 1200px) {
+    // 데스크탑 일반
+}
 
 
 
