@@ -29,6 +29,14 @@
         width: 100% !important;
     }
 
+    .search-chk {
+        width: 145px !important;
+    }
+
+    .search-btn {
+        width: 120px !important;
+    }
+
     .top2-img>img {
         width: 300px !important;
         height: 200px !important;
@@ -40,16 +48,29 @@
     }
 
     .top2-text-content1-title {
-        font-size: 20px !important;
+        font-size: 17px !important;
     }
 
     .top2-text-content2-afPrc {
-        font-size: 20px !important;
+        font-size: 18px !important;
     }
 
     .top2-text-content2 {
         font-size: 18px !important;
     }
+    
+    .top2-text-content2-coupon {
+        font-size: 16px;
+    }
+
+    .goto {
+        width: 100% !important;
+    }
+
+    .goto-space {
+        display: block !important;
+    }
+    
 }
 
 :root {
@@ -313,7 +334,6 @@ body{
 .top2 {
     color: #273e49;
     display: flex;
-    justify-content: center;
 }
 
 .top2-between {
