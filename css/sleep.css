@@ -74,6 +74,14 @@
     .goto-space {
         display: block !important;
     }
+
+    .goto-group {
+        justify-content: center !important;
+    }
+
+    .goto-group-between {
+        margin-right: 60px !important;
+    }
     
 }
 
@@ -519,6 +527,15 @@ body{
     font-size: 20px;
     font-weight: 900;
 }
+
+.goto-group {
+    display: flex;
+}
+
+.goto-group-between {
+    margin-right: 27px;
+}
+
 /* goto-end */
 
 /* ad2-start */
