@@ -86,7 +86,7 @@ input {
 small {
   color: var(--blue-900);
   cursor: pointer;
-  font-size:medium !important;
+  font-size: medium !important;
 }
 
 small:hover {
@@ -268,7 +268,7 @@ small:hover {
   margin-bottom: 107px;
 }
 
-.card-wrapper{
+.card-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -321,6 +321,37 @@ small:hover {
   margin-right: 0px;
 }
 
+.item2:hover .tour-title {
+  opacity: 0;
+}
+
+.item2:hover .bottom-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item2:hover .item-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 34px 25px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  color: var(--white);
+  background-color: #28b5b5c7;
+}
+
+.item2:hover .tag {
+  color: #4b778d;
+  background-color: #8fd9a8;
+  margin: 0.2em;
+}
+
 .item-cap {
   position: absolute;
   width: 100%;
@@ -368,7 +399,7 @@ small:hover {
   width: 450px;
   height: 50px;
   display: flex;
-  overflow:hidden;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   border: 1px solid #c4ced3;
@@ -457,37 +488,6 @@ small:hover {
   color: #fff;
 }
 
-.item2:hover .tour-title {
-  opacity: 0;
-}
-
-.item2:hover .bottom-group {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.item2:hover .item-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 40px 34px 25px;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  color: var(--white);
-  background-color: #28b5b5c7;
-}
-
-.item2:hover .tag {
-  color: #4b778d;
-  background-color: #8fd9a8;
-  margin: 0.2em;
-}
-
 .tour-item:hover .item-hover {
   display: flex;
 }
@@ -526,7 +526,7 @@ small:hover {
   border-color: #4b778d !important;
 }
 
-.row{
+.row {
   --bs-gutter-x: 1rem !important;
 }
 
@@ -541,12 +541,12 @@ small:hover {
     position: fixed !important;
   }
 
-  .main-container{
+  .main-container {
     width: 100%;
     padding: 0 15px;
   }
 
-  .title{
+  .title {
     margin-top: 40px;
     margin-bottom: 22px;
     font-size: 18px;
@@ -557,49 +557,118 @@ small:hover {
     align-items: flex-start;
   }
 
-  .atag, small {
+  .atag,
+  small {
     opacity: 0;
-    height:0px;
+    height: 0px;
   }
 
   .input-area {
-    padding-top:0px;
-    padding-bottom:10px;
-    flex-flow:column;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    flex-flow: column;
   }
 
   .flight-btn {
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  .notice-line, .notice {
+  .notice-line,
+  .notice {
     opacity: 0;
-    height:0px;
+    height: 0px;
   }
 
   .latest-area {
     display: flex;
     padding: 20px;
-    padding-bottom :10px;
+    padding-bottom: 10px;
   }
 
   .where {
-    width: 300px;
-    margin-bottom:3px;
+    width: 100%;
+    margin-bottom: 3px;
   }
 
-  .where input{
+  .where input {
     width: 120px !important;
   }
-  
+
   .when {
-    width: 300px;
-    margin-bottom:3px;
+    width: 100%;
+    margin-bottom: 3px;
   }
-  
+
   .who {
-    width: 300px;
+    width: 100%;
   }
-  
+
+  .item {
+    position: relative;
+    width: 100.5px;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c4ced3;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .item2 {
+    position: relative;
+    width: 251.5px;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c4ced3;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-flow: column;
+    justify-content: flex-end;
+    background-size: cover;
+    box-shadow: 0px -70px 50px 0 #00000093 inset;
+  }
+
+  .title-area h2 {
+    margin-bottom: 10px !important;
+    font-size: 18px !important;
+  }
+
+  .main-search-area {
+    margin-bottom: 40px;
+    height: 540px;
+  }
+
+  .latest-card {
+    height: 105px;
+  }
+
+  .exit-area {
+    padding: 16px;
+    padding-top : 12px;
+    padding-bottom: 0px;
+  }
+
+  .promo-area {
+    margin-bottom: 40px;
+  }
+
+  .card-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .carousel-indicators {
+    position: relative !important;
+  }
+
+  .carousel-button {
+    background-color: #626f75 !important;
+  }
 }
