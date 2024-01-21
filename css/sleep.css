@@ -432,13 +432,13 @@ body{
 }
 /* goto-end */
 
-/* exhibition-start */
-.content-exhibition {
+/* ad2-start */
+.content-ad2 {
     width: 1086px;
-    margin: 0 auto;
+    margin: 107px auto 16px auto;
 }
 
-.exhibition-img {
+.ad2-img {
     border-radius: 10px;
 }
-/* exhibition-end */
+/* ad2-end */
