@@ -494,7 +494,7 @@
               <div class="hot-deal-cap">
                 <div class="time-area">
                   <i class="fa-regular fa-clock"></i>
-                  <p>0일 11시간 20분 10초 남았습니다</p>
+                  <p class="dDay">000일 00시간 00분 00초</p>
                 </div>
                 <div class="cap-area">
                   <p class="sub-cap">서울,부산,제주 핫한 호텔 총 출동!</p>
@@ -948,6 +948,41 @@
 
     <!-- footer -->
     <div id="footer"></div>
+
+    <!-- 핫 딜 디데이 계산기 -->
+    <script>
+      $(document).ready(function () {
+    // 목표 날짜 설정 (2024년 1월 24일)
+    var targetDate = new Date("2024-01-24T00:00:00");
+
+    // 타이머 업데이트 함수
+    function updateTimer() {
+        var currentDate = new Date();
+        var timeDifference = targetDate - currentDate;
+
+        // 남은 날짜, 시간, 분, 초 계산
+        var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // 결과를 화면에 출력
+        var dDayText = days.toString().padStart(2, '0') + "일 " +
+                       hours.toString().padStart(2, '0') + "시간 " +
+                       minutes.toString().padStart(2, '0') + "분 " +
+                       seconds.toString().padStart(2, '0') + "초 남았습니다.";
+                       
+        $(".dDay").html(dDayText);
+    }
+
+    // 초기 업데이트 호출
+    updateTimer();
+
+    // 1초마다 업데이트
+    setInterval(updateTimer, 1000);
+}); 
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
