@@ -48,7 +48,14 @@
 
     .top2-text-main {
         max-width: 1086px !important;
+    }
+
+    .top2 {
         display: contents !important;
+    }
+
+    .top2-main {
+        margin-bottom: 10px !important;
     }
 
     .top2-text-content1-title {
