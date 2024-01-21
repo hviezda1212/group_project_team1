@@ -47,24 +47,21 @@ body{
     font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
 }
 
+/* search-start */
 .title { /* 섹션 제목 */
     color: var(--blue-900);
-    font-size: 28px;
+    font-size: 35px;
     font-weight: 800;
-}
-
-.title-order {
-    max-width: 700px;
 }
 
 .title-text {
     margin: 16px;
-    max-width: 700px;
-    padding-left: 10px;
+    max-width: 1086px;
     color: #273e49;
+    font-size: 31px;
+    font-weight: bold;
 }
 
-/* search-start */
 .content-search {
     width: 1086px;
     margin: 0 auto;
@@ -72,9 +69,8 @@ body{
 
 .search-parent {
     display: flex;
-    justify-content: center;
-    max-width: 700px;
-    height: 40px;
+    max-width: 1086px;
+    height: 70px;
     border: 1px solid #f5f6f7;
     border-radius: 99px;
     background-color: #f5f6f7;
@@ -370,6 +366,11 @@ body{
     justify-content: space-between;
 }
 
+.goto-space>a:hover {
+    text-decoration: none;
+    color: #273e49;
+}
+
 .goto-main {
     display: flex;
     position: relative;
@@ -431,4 +432,12 @@ body{
 }
 /* goto-end */
 
+/* exhibition-start */
+.content-exhibition {
+    width: 1086px;
+    margin: 0 auto;
+}
 
+.exhibition-img {
+    border-radius: 10px;
+}
