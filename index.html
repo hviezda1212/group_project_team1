@@ -23,20 +23,18 @@
 
             body {
                 font-family: suit; /* body에 있는 모든 서체를 suit로 설정 */
-            }
-
-            body {
                 height: 100vh;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
+
             video {
                 position: absolute;
                 left: 0;
                 top: 0;
-                min-width: 100%;
-                min-height: 100%;
+                width: 100%;
+                height: 100%;
                 background-repeat: no-repeat;
                 object-fit: cover;
                 background-position: center;
@@ -50,8 +48,9 @@
                 background: transparent;
                 backdrop-filter: blur(20px);
                 padding: 40px;
-                width: 500px;
-                top: -150px;
+                width: 80%; /* 변경된 부분 */
+                max-width: 500px; /* 변경된 부분 */
+                /* top: -150px; */
                 box-shadow: 1px 1px 10px black;
                 border-radius: 10px;
             }
@@ -65,8 +64,10 @@
             .sigin {
                 overflow: hidden;
                 transition: max-height 2s ease;
-                width: 400px;
-                top: -150px;
+                width: 80%; /* 변경된 부분 */
+                max-width: 400px; /* 변경된 부분 */
+                /* top: -150px; */
+                margin: 0 auto;
             }
         
             .sigin .open {
@@ -78,25 +79,47 @@
             }
 
             i {
-                font-size: 8rem;
+                font-size: 6rem;
                 color: #28b5b5;
             }
 
             span {
                 font-family: jalnan;
-                font-size: 3rem;
+                font-size: 2.6rem;
                 color: #28b5b5;
                 margin-left: 40px;
+            }
+
+            @media (max-width: 700px) {
+                .sigin {
+                    width: 90%; /* 변경된 부분 */
+                    max-width: 300px; /* 변경된 부분 */
+                }
+
+
+                i, span {
+                    text-align: center; /* 변경된 부분 */
+                    margin: 0 auto; /* 변경된 부분 */
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            @media (max-width: 400px) {
+                .main {
+                    width: 320px; /* 변경된 부분 */
+                }
             }
 
         </style>
     </head>
     <body>
         <video src="/asset/video/bg.mp4" autoplay loop muted></video>
-        <div class="container main">
+        <div class="main">
             <div class="sigin">
                 <form id="loginForm">
-                    <i class="logo-icon fa-solid fa-mountain-sun"></i><span>누나투어</span>
+                    <i class="logo-icon fa-solid fa-mountain-sun"></i>
+                    <span>누나투어</span>
                     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
             
                     <div class="form-floating">

@@ -429,6 +429,15 @@ body {
     margin-top: var(--margin-107);
 }
 
+.re-card {
+    border: none;
+}
+
+.re-card img {
+    border-radius: var(--radius-10);
+    overflow: hidden;
+}
+
 .re-card h5 {
     font-size: 3rem;
     color: var(--mint-900);
