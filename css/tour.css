@@ -3,7 +3,7 @@
     --white: #fff;
           --black: #000;
     --blue-900: #273e49; /* 텍스트 색상, black 대신 쓰세요 */
-          --blue-800: ##4B778D; /* 메인컬러1 : 네이비 */
+          --blue-800: #4B778D; /* 메인컬러1 : 네이비 */
           --blue-700: #626f75;  /* 서브 텍스트 색상, 짙은 회색 */
           --mint-900: #28b5b5; /* 메인컬러2 : 선명한 민트색 */
           --light-green: #8FD9A8; /* 메인컬러3 밝은 연두색 */
@@ -81,6 +81,11 @@ section{
     flex-flow: column;
     align-items: flex-start;  
 }
+
+.content1{
+    border-radius: 10px;
+}
+
 .content3,.content4,.content5{
     display: flex !important;
     flex-flow: wrap;
@@ -277,7 +282,7 @@ section{
 }
 .card-title{
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 500;
 }
 .card-sub-title{

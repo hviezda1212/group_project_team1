@@ -19,7 +19,7 @@
     ></script>
     <script src="/javascript/jquery-3.7.1.js"></script>
     <link rel="stylesheet" href="/css/air.css" />
-    <title>항공편</title>
+    <title>누나투어 :: 항공편</title>
   </head>
 
   <body>
@@ -31,7 +31,7 @@
       <div class="main-container">
         <div class="main-search-area">
           <div class="button-area">
-            <div>
+            <div class="radio-btn">
               <input
                 type="radio"
                 class="btn-check"
@@ -90,21 +90,13 @@
                 >다구간</label
               >
             </div>
-            <div>
-              <a
-                class="icon-link icon-link-hover"
-                href="#"
-                style="margin-right: 16px"
-              >
-                회원 예약내역 >
-              </a>
-              <a class="icon-link icon-link-hover" href="#">
-                비회원 예약내역 >
-              </a>
+            <div class="atag">
+              <small style="margin-right: 16px"> 회원 예약내역 > </small>
+              <small> 비회원 예약내역 > </small>
             </div>
           </div>
 
-          <div class="input-area" style="justify-content: space-between;">
+          <div class="input-area" style="justify-content: space-between">
             <div class="where">
               <input
                 type="text"
@@ -112,7 +104,7 @@
                 placeholder="김포 (GMP)"
                 style="font-weight: 800; width: 190px; padding-left: 16px"
               />
-              <button class="mrt_btn_swapper" style="border-style: none">
+              <button class="btn-swapper" style="border-style: none">
                 도착 출발 교체
               </button>
               <input
@@ -124,7 +116,7 @@
             </div>
 
             <div class="when">
-              <button class="date_selector" style="border-style: none"></button>
+              <button class="date-selector" style="border-style: none"></button>
               <input
                 type="text"
                 readonly="readonly"
@@ -151,13 +143,14 @@
             </div>
           </div>
 
-          <div class="input-area" style="padding-top: 0px; padding-bottom:0px;">
-            <div class="form-check form-check-inline">
+          <div class="check-area" style="padding-top: 0px; padding-bottom: 0px">
+            <div class="form-check form-check-inline" style="margin-left: 10px">
               <input
                 class="form-check-input"
                 type="checkbox"
                 id="inlineCheckbox1"
                 value="option1"
+                checked="checked"
               />
               <label class="form-check-label" for="inlineCheckbox1">직항</label>
             </div>
@@ -174,25 +167,20 @@
             </div>
           </div>
           <div class="line">
-            <button
-              type="button"
-              class="flight-btn"
-            >
-              항공권 검색
-            </button>
+            <button type="button" class="flight-btn">항공권 검색</button>
           </div>
           <div class="notice-line">
             <div class="notice">
               <span class="mark_notice">공지</span>
-              <div class="txt"> [공지] 2024년 1월 1일 부 유류할증료 안내</div>
-              <span class="meta_date">2023-12-27</span>
+              <div class="txt">[공지] 2024년 1월 1일 부 유류할증료 안내</div>
+              <span class="meta-date">2023-12-27</span>
             </div>
             <div>
-              <a href="#">모두보기 ></a>
+              <small>모두보기 ></small>
             </div>
           </div>
           <div class="latest-area">
-            <h3 class="title" style="font-size: 99%">최근 검색한 항공권</h3>
+            <h3 style="font-size: 99%">최근 검색한 항공권</h3>
           </div>
 
           <div class="latest-box-area">
@@ -207,7 +195,7 @@
               </div>
               <div class="air-line-title">
                 <div>김포 (GMP)</div>
-                <em class="ico_itinerary_03"></em>
+                <em class="ico-itinerary"></em>
                 <div>제주 (CJU)</div>
               </div>
               <div class="air-line-text">
@@ -225,38 +213,19 @@
           </h2>
         </div>
         <div class="promo-area">
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner" style="border-radius: 10px;">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            style="cursor: pointer"
+          >
+            <div class="carousel-inner" style="border-radius: 10px">
               <div class="carousel-item active">
                 <img
                   src="/asset/image/air/banner2.png"
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
                 <img
@@ -264,8 +233,7 @@
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
               <div class="carousel-item">
                 <img
@@ -273,8 +241,7 @@
                   class="d-block w-100"
                   alt="..."
                 />
-                <div class="carousel-caption d-none d-md-block">
-                </div>
+                <div class="carousel-caption d-none d-md-block"></div>
               </div>
             </div>
             <button
@@ -301,6 +268,31 @@
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
+
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active carousel-button"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+                class="carousel-button"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+                class="carousel-button"
+              ></button>
+            </div>
           </div>
         </div>
 
@@ -309,71 +301,76 @@
             class="title"
             style="font-size: 28px; margin-bottom: 16px; font-weight: 800"
           >
-            검색 상위 공항 TOP4
+            검색 상위 공항 TOP4✈️
           </h2>
         </div>
-        <div class="item-box">
-          <div
-            class="item"
-            style="background-image: url(/asset/image/air/jeju.png)"
-          >
-            <div class="item-cap">
-              <div class="title-cap-box">
-                <h4 style="margin-bottom: 3px">제주</h4>
-                <p class="caption">김포 -> 제주</p>
+        <div class="card-wrapper">
+          <div class="card-group">
+            <div
+              class="item"
+              style="background-image: url(/asset/image/air/jeju.png)"
+            >
+              <div class="item-cap">
+                <div class="title-cap-box">
+                  <h4 style="margin-bottom: 3px; font-weight: 650">제주</h4>
+                  <p class="caption">김포 -> 제주</p>
+                </div>
+                <h5 class="price">45,900원~</h5>
+                <div class="tags">
+                  <p class="tag">#한라산</p>
+                  <p class="tag">#동백꽃</p>
+                </div>
               </div>
-              <h5 class="price">45,900원~</h5>
-              <div class="tags">
-                <p class="tag">#한라산</p>
-                <p class="tag">#동백꽃</p>
+            </div>
+            <div
+              class="item"
+              style="background-image: url(/asset/image/air/gimpo.png)"
+            >
+              <div class="item-cap">
+                <div class="title-cap-box">
+                  <h4 style="margin-bottom: 3px; font-weight: 650">김포</h4>
+                  <p class="caption">제주 -> 김포</p>
+                </div>
+                <h5 class="price">50,000원~</h5>
+                <div class="tags">
+                  <p class="tag">#조각공원</p>
+                  <p class="tag">#장릉</p>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            class="item"
-            style="background-image: url(/asset/image/air/gimpo.png)"
-          >
-            <div class="item-cap">
-              <div class="title-cap-box">
-                <h4 style="margin-bottom: 3px">김포</h4>
-                <p class="caption">제주 -> 김포</p>
-              </div>
-              <h5 class="price">50,000원~</h5>
-              <div class="tags">
-                <p class="tag">#조각공원</p>
-                <p class="tag">#장릉</p>
-              </div>
-            </div>
-          </div>
-          <div
-            class="item"
-            style="background-image: url(/asset/image/air/busan.png)"
-          >
-            <div class="item-cap">
-              <div class="title-cap-box">
-                <h4 style="margin-bottom: 3px">부산</h4>
-                <p class="caption">김포 -> 부산</p>
-              </div>
-              <h5 class="price">34,900원~</h5>
-              <div class="tags">
-                <p class="tag">#광안리</p>
-                <p class="tag">#해운대</p>
+
+          <div class="card-group">
+            <div
+              class="item"
+              style="background-image: url(/asset/image/air/busan.png)"
+            >
+              <div class="item-cap">
+                <div class="title-cap-box">
+                  <h4 style="margin-bottom: 3px; font-weight: 650">부산</h4>
+                  <p class="caption">김포 -> 부산</p>
+                </div>
+                <h5 class="price">34,900원~</h5>
+                <div class="tags">
+                  <p class="tag">#광안리</p>
+                  <p class="tag">#해운대</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            class="item"
-            style="background-image: url(/asset/image/air/yusu.png)"
-          >
-            <div class="item-cap">
-              <div class="title-cap-box">
-                <h4 style="margin-bottom: 3px">여수</h4>
-                <p class="caption">김포 -> 여수</p>
-              </div>
-              <h5 class="price">64,000원~</h5>
-              <div class="tags">
-                <p class="tag">#게장</p>
-                <p class="tag">#엑스포</p>
+            <div
+              class="item"
+              style="background-image: url(/asset/image/air/yusu.png)"
+            >
+              <div class="item-cap">
+                <div class="title-cap-box">
+                  <h4 style="margin-bottom: 3px; font-weight: 650">여수</h4>
+                  <p class="caption">김포 -> 여수</p>
+                </div>
+                <h5 class="price">64,000원~</h5>
+                <div class="tags">
+                  <p class="tag">#게장</p>
+                  <p class="tag">#엑스포</p>
+                </div>
               </div>
             </div>
           </div>
@@ -387,30 +384,93 @@
             누나 투어 추천 지역
           </h2>
         </div>
-        <div class="item-box">
-          <div
-            class="item2"
-            style="background-image: url(/asset/image/air/daejeon.png)"
-          >
-            <h3>대전</h3>
+        <div class="card-wrapper2">
+          <div class="card-group">
+            <a
+              href="#"
+              class="item2"
+              style="background-image: url(/asset/image/air/daejeon.png)"
+            >
+              <p class="tour-title">[대전] 밀가루의 도시</p>
+              <div class="item-hover">
+                <div class="top-group">
+                  <h3>[대전] 밀가루의 도시</h3>
+                  <p>성심당과 칼국수 식도락 투어</p>
+                </div>
+                <div class="bottom-group">
+                  <div class="tags">
+                    <div class="tag">#부추빵</div>
+                    <div class="tag">#튀김소보로</div>
+                    <div class="tag">#칼국수</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="item2"
+              style="background-image: url(/asset/image/air/namwon.png)"
+            >
+              <p class="tour-title">[남원] 춘향전이 그려진</p>
+              <div class="item-hover">
+                <div class="top-group">
+                  <h3>[남원] 춘향전이 그려진</h3>
+                  <p>광한루에서 한복입고 인생샷</p>
+                </div>
+                <div class="bottom-group">
+                  <div class="tags">
+                    <div class="tag">#광한루</div>
+                    <div class="tag">#춘향</div>
+                    <div class="tag">#전통체험</div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-          <div
-            class="item2"
-            style="background-image: url(/asset/image/air/namwon.png)"
-          >
-            <h3>남원</h3>
-          </div>
-          <div
-            class="item2"
-            style="background-image: url(/asset/image/air/suwon.png)"
-          >
-            <h3>수원</h3>
-          </div>
-          <div
-            class="item2"
-            style="background-image: url(/asset/image/air/geongju.png)"
-          >
-            <h3>경주</h3>
+
+          <div class="card-group">
+            <a
+              href="#"
+              class="item2"
+              style="background-image: url(/asset/image/air/suwon.png)"
+            >
+              <p class="tour-title">[수원] 새로운 핫플</p>
+              <div class="item-hover">
+                <div class="top-group">
+                  <h3>[수원] 새로운 핫플</h3>
+                  <p>행궁동 소품샵 & 맛집 탐방</p>
+                </div>
+                <div class="bottom-group">
+                  <div class="tags">
+                    <div class="tag">#행궁동</div>
+                    <div class="tag">#방화수류정</div>
+                    <div class="tag">#화성</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a
+              href="#"
+              class="item2"
+              style="background-image: url(/asset/image/air/geongju.png)"
+            >
+              <p class="tour-title">[경주] 역사 덕후 추천</p>
+              <div class="item-hover">
+                <div class="top-group">
+                  <h3>[경주] 역사 덕후 추천</h3>
+                  <p>수학여행 필수 코스</p>
+                </div>
+                <div class="bottom-group">
+                  <div class="tags">
+                    <div class="tag">#불국사</div>
+                    <div class="tag">#석굴암</div>
+                    <div class="tag">#첨성대</div>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -421,40 +481,44 @@
           >
             항공권 공지사항
           </h2>
-          <a href="#">더보기 ></a>
+          <small>더보기 ></small>
         </div>
-        <table class="table table-hover">
+        <table class="table table-hover" style="cursor: pointer">
           <thead>
             <tr></tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>[공지] 2024년 1월 1일 부 유류할증료 안내</td>
-              <td></td>
-              <td style="text-align: right">2023-12-27</td>
+              <td style="padding-right: 0px">
+                [공지] 2024년 1월 1일 부 유류할증료 안내
+              </td>
+              <td style="padding: 0px"></td>
+              <td style="text-align: right; color: #848c94">2023-12-27</td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>
+              <td style="padding-right: 0px">
                 [공지] 에어서울 국내선 시스템 이전 작업에 따른 이용 제한 안내
               </td>
-              <td></td>
-              <td style="text-align: right">2023-12-18</td>
+              <td style="padding: 0px"></td>
+              <td style="text-align: right; color: #848c94">2023-12-18</td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>
+              <td style="padding-right: 0px">
                 [공지] 최초 발권 후 24시간 이내 환불 처리 방침 변경 항공사 안내
               </td>
-              <td></td>
-              <td style="text-align: right">2023-11-22</td>
+              <td style="padding: 0px"></td>
+              <td style="text-align: right; color: #848c94">2023-11-22</td>
             </tr>
             <tr>
               <th scope="row">4</th>
-              <td>[공지] 개인정보처리방침(시행일 23.11.16) 개정 공지</td>
-              <td></td>
-              <td style="text-align: right">2023-11-09</td>
+              <td style="padding-right: 0px">
+                [공지] 개인정보처리방침(시행일 23.11.16) 개정 공지
+              </td>
+              <td style="padding: 0px"></td>
+              <td style="text-align: right; color: #848c94">2023-11-09</td>
             </tr>
           </tbody>
         </table>

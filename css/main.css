@@ -69,6 +69,16 @@ a {
     overflow-x: auto;
 }
 
+
+.card-wrapper::-webkit-scrollbar{
+    background-color: rgba(255, 192, 203, 0);
+}
+
+.card-wrapper::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 192, 203, 0);
+}
+
+
 .card-item{ 
     margin-right: 10px;
     border-radius: var(--radius-10);
@@ -123,14 +133,33 @@ section{
     position: relative;
     padding: 30px 30px 20px 25px;
     background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-position: center;
     background-size: cover;
+    color: var(--white);
     box-shadow: 10px 10px 200px 10px #292e30bd inset;
     transition: transform 0.3s ease-in-out;
 }
 
 .region-section .card-item:hover{
     transform: scale(1.02);
-    color: var(--blue-900);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.region-section .card-item:nth-child(2){
+    background-image: url(/asset/image/main/region2.png);
+}
+.region-section .card-item:nth-child(3){
+    background-image: url(/asset/image/main/region3.png);
+}
+.region-section .card-item:nth-child(4){
+    background-image: url(/asset/image/main/region4.png);
+}
+.region-section .card-item:nth-child(5){
+    background-image: url(/asset/image/main/region5.png);
+}
+.region-section .card-item:nth-child(6){
+    background-image: url(/asset/image/main/region6.png);
 }
 
 .region-section .card-content{
@@ -183,7 +212,8 @@ section{
     margin-right: 30px;
     padding: 30px 30px 20px 25px;
     border-radius: var(--radius-10);
-    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-image: url(/asset/image/main/sleep1.jpeg);
+    background-position: center;
     background-size: cover;
     /* box-shadow: 10px 10px 200px 10px #292e30bd inset; */
     overflow: visible;
@@ -195,6 +225,18 @@ section{
     color: var(--blue-900);
 }
 
+.sleep-section .card-item:nth-child(2){
+    background-image: url(/asset/image/main/sleep2.jpeg);
+}
+.sleep-section .card-item:nth-child(3){
+    background-image: url(/asset/image/main/sleep3.jpeg);
+}
+.sleep-section .card-item:nth-child(4){
+    background-image: url(/asset/image/main/sleep4.jpeg);
+}
+.sleep-section .card-item:nth-child(5){
+    background-image: url(/asset/image/main/sleep5.jpeg);
+}
 
 .sleep-section .card-cap{
     position: absolute;
@@ -323,14 +365,31 @@ section{
     margin-right: 17px;
     margin-bottom: 10px;
     border: 0.5px solid rgb(199, 197, 197);
-    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-image: url(/asset/image/main/food1.png);
+    background-position: center;
     background-size: cover;
-    box-shadow: var(--shadow);
     cursor: pointer;
 }
 
 .food-section .card-item:hover{
     color: var(--blue-900);
+    box-shadow: var(--shadow);
+}
+
+.food-section .card-item:nth-child(2){
+    background-image: url(/asset/image/main/food2.png);
+}
+.food-section .card-item:nth-child(3){
+    background-image: url(/asset/image/main/food3.png);
+}
+.food-section .card-item:nth-child(4){
+    background-image: url(/asset/image/main/food4.png);
+}
+.food-section .card-item:nth-child(5){
+    background-image: url(/asset/image/main/food5.png);
+}
+.food-section .card-item:nth-child(6){
+    background-image: url(/asset/image/main/food6.png);
 }
 
 .food-section .card-cap{
@@ -408,6 +467,9 @@ section{
     padding: 20px 26px;
     border-radius: var(--radius-10);
     background-color: gray;
+    background-image: url(/asset/image/main/tour1.jpeg);
+    background-position: center;
+    background-size: cover;
     box-shadow: 0px -70px 50px 0 #00000093 inset;
     overflow: hidden;
 }
@@ -416,12 +478,25 @@ section{
     width: 361px;
     height: 464px;
     margin-right: 16px;
-    background-image: url(/asset/image/main/4737_large_square_1535949304.jpg);
+    background-image: url(/asset/image/main/tour1.jpeg);
+    background-position: center;
+    background-size: cover;
 }
 
-.item-group .tour-item{
-    background-image: url(/asset/image/main/tour2.jpeg);
-    background-size: cover;
+.tour-item2 {
+    background-image: url(/asset/image/main/tour22.jpeg);
+}
+
+.tour-item3{
+    background-image: url(/asset/image/main/tour3.png);
+}
+
+.tour-item4{
+    background-image: url(/asset/image/main/tour4.png);
+}
+
+.tour-item5{
+    background-image: url(/asset/image/main/tour5.png);
 }
 
 /* .item-group-first .tour-item:nth-child(1){
@@ -511,27 +586,31 @@ section{
 }
 
 .flight-item{
-    width: 538px;
+    width: 100%;
     margin-right: 10px;
     border-radius: 20px;
 }
 
-.region-section-mobile, sleep-section-mobile{
+.flight-img{
+    width: 538px;
+    border-radius: 20px;
+}
+
+.main-slide-mobile,.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
+.tour-section-mobile, .flight-section-mobile{
     display: none;
 }
 
 /* 모바일 버전 */
 @media screen and (max-width: 48rem) {
-    .region-section-pc, .sleep-section-pc{
+    .main-slide-pc,.region-section-pc, .sleep-section-pc, .food-section-pc, 
+    .tour-section-pc, .flight-section-pc {
         display: none;
     }
-    .region-section-mobile, .sleep-section-mobile{
+    .main-slide-mobile,.region-section-mobile, .sleep-section-mobile, .food-section-mobile, 
+    .tour-section-mobile, .flight-section-mobile{
         display: flex;
     } 
-
-    .region-section-mobile, {
-        display: flex;
-    }
 
     .header-area, h1{
         margin: 0 !important;
@@ -544,7 +623,7 @@ section{
 
     .title{
         margin-top: 40px;
-        margin-bottom: 22px;
+        margin-bottom: 10px;
         font-size: 18px;
     }
 
@@ -568,6 +647,7 @@ section{
         flex-flow: column;
         padding-left: 10px;
         margin-bottom: 40px;
+        overflow: hidden;
     }
 
     .card-group{
@@ -593,6 +673,12 @@ section{
         overflow: visible;
     }
 
+    .region-section .card-item:nth-child(2),
+    .region-section .card-item:nth-child(3){
+        background-image: none;
+    }
+
+
     .region-section .card-img {
         width: 90px;
         height: 90px;
@@ -613,9 +699,218 @@ section{
     }
 
     /* sleep section */
-    .sleep-card-container{
+    .sleep-card-container, .tour-card-container{
         display: flex;
     }
 
+    .sleep-items, .tour-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 0;
+        overflow-x: auto;
+    }
 
+    .tour-img{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+    .sleep-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .sleep-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .sleep-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+    
+    .sleep-img{
+        width: 145px;
+        height: 138px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+    }
+
+    .sleep-section .cap{
+        padding: 10px 7px 6px 7px;
+        font-size: 11px;
+        color: var(--blue-900);
+    }
+
+    .sleep-section h3{
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+
+    .sleep-section p{
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 600;
+    }
+
+    /* hot-deal section */
+    .hot-deal-box{
+        flex-flow: column;
+    }
+
+    .hot-deal-cap{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 18px;
+        font-size: 16px;
+    }
+
+    .time-area{
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .cap-area{
+       padding: 10px 0 0 37px;
+    }
+
+    .hot-deal-section .sub-cap{
+        font-size: 16px;
+    }
+
+    .hot-deal-section .price-cap{
+        margin-top: 35px;
+        font-size: 25px;
+    }
+
+    .cap-area .check-btn{
+        font-size: 13px;
+    }
+
+    .check-btn img{
+        width: 30px;
+    }
+
+    /* food section  */
+
+    .food-card-container{
+        display: flex;
+    }
+
+    .food-items{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+
+    .food-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .food-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .food-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+    
+    .food-img{
+        width: 190px;
+        height: 138px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        overflow: hidden;
+    }
+
+    .food-section .cap{
+        padding: 10px 7px 6px 7px;
+        font-size: 11px;
+        color: var(--blue-900);
+    }
+
+    .food-section h3{
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .food-section p{
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .michelin-icons{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .star-icon{
+        width: 16px;
+        margin-right: 4px;
+    }
+
+    /* tour section */
+    .tour-item{
+        margin-right: 10px;
+        border: 0.5px solid rgb(189, 189, 189);
+        border-radius: 15px;
+    }
+
+    .tour-img{
+        width: 324px;
+        height: 181px;
+    }
+
+    .tour-cap{
+        padding: 15px;
+        color: var(--blue-900);
+    }
+
+    .tour-cap p{
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .tour-cap h3{
+        margin-bottom: 5px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .second-group{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .second-group .tags{
+        display: flex;
+    }
+
+    /* flight section */
+    .flight-items{
+        width: 100%;
+    }
+
+    .flight-img{
+        width: 300px;
+        border-radius: 20px;
+    }
+
+    .flight-items::-webkit-scrollbar{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    .flight-items::-webkit-scrollbar-thumb{
+        background-color: rgba(255, 192, 203, 0);
+    }
+
+    
 }
