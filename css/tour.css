@@ -311,16 +311,16 @@ section{
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        width: 500px;
     }
     main{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          flex-direction: column;
+        padding:15px ;
     }
-    .content1,.content2,.content3,.content4,.content5{
-        width: 400px;
+    .where{
+        display: none;
+    }
+    .content2,.content3,.content4,.content5{
+        width: 100%;
+        justify-content: center;
         
     }
     .content1{
@@ -338,34 +338,57 @@ section{
     top:45%;
     width: 100% !important;
 }
-.item{
-  
+.item .content{
+    position: absolute;
+    top: 22%;
+    left: 50px;
+    width: 300px;
+    text-align: left;
+    padding: 0;
+    color: white;
+    transform: translate(0, -50%);
+    display: none;
 }
 .item .name{
     font-size: 20px;
 
 }
-.card{
-    margin: auto !important;
-    padding: 15px;
+
+.card,.card-body{
     border: none!important;
+    margin:0 0 5px 5px;
+    width: 150px;
+    height: 200px;
+}
+.card-title,.card-sub-title,.card-info{
+    font-size: 0.7em;
+}
+.card-btn{
+    width: 100px;
+    height: 25px;
+    font-size: 0.7em;
+    padding: 0;
 }
 .position{
-   width:100%;
-   margin: 54px;
+    width: 100%;
+    margin: 10px;
+}
+.title{
+    font-size: 1.25rem;
+}
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    // 테블릿 세로
+    /*테블릿 세로*/
    
 }
-}
+
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    // 테블릿 가로
+    /* 테블릿 가로*/
 }
 
 @media (min-width: 1200px) {
-    // 데스크탑 일반
+    /* 데스크탑 일반*/
 }
 
 
